@@ -4,11 +4,37 @@ import {defineConfig} from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
+	assetsInclude: [
+		'assets/**',
+		'wp-content/**',
+		'app/wp-content/**',
+		'google-fonts/**',
+		'app/google-fonts/**',
+		'wp-content/uploads/sites/1302270/2021/06/**',
+		'wp-content/uploads/sites/1302270/2023/09/**',
+	],
+	// css: ,
+	// build: {
+	//   watch: {
+	//     include
+	//   },
+	// }
 	plugins: [
 		remixDevTools(),
 		remix({
-			ignoredRouteFiles: ['app/assets/*', 'app/wp-content/*', 'app/google-fonts/*'],
+			// serverModuleFormat: ''
 			ssr: false,
+			ignoredRouteFiles: [
+				'app/assets/*',
+				'app/wp-content/*',
+				'app/wp-content/**',
+				'app/google-fonts/*',
+				'app/google-fonts/**',
+				'app/wp-content/uploads/sites/1302270/2023/09/*',
+				'app/wp-content/uploads/sites/1302270/2021/06/*',
+				'app/wp-content/index-files/**',
+				// "app/wp-content/index-files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css",
+			],
 		}),
 		tsconfigPaths(),
 	],
