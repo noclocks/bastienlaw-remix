@@ -1,45 +1,25 @@
-// import {useState} from "react";
 import {MouseEvent} from "react";
 import Logo from "../wp-content/uploads/sites/1302270/2021/06/logo.jpg"
 
 export const Header = () => {
-  // const [currentMenuItemElement, setCurrentMenuItem] = useState('Home');
 
   const handleMouseOver = (e: MouseEvent) => {
-    const currentMenuItem = document.querySelector('.current-menu-item') as HTMLLIElement;
-
-    console.log('Current Menu Item Mouse Over', currentMenuItem);
-
-    // TODO: Apply update to state `onClick`
-    if (currentMenuItem) {
-      currentMenuItem.classList.remove('current-menu-item');
-    }
-
     const target = e.target as HTMLAnchorElement;
     const parent = target.parentElement as HTMLLIElement;
-
-    // debugger;
 
     parent.classList.add('et-hover');
     parent.classList.add('et-show-dropdown');
   };
 
   const handleMouseOut = (e: MouseEvent) => {
-    console.log('Mouse Out Event', e);
-    // const target = e.target as HTMLAnchorElement;
-    // const parent = target.parentElement as HTMLLIElement;
+    setTimeout(() => {
+      const target = e.target as HTMLAnchorElement;
+      const parent = target.parentElement as HTMLLIElement;
 
-    const currentPage = __remixRouter.state.location.pathname;
-    console.log('Current Page', currentPage);
-
-    // debugger;
-
-    // parent.classList.remove('et-hover');
-    // parent.classList.remove('et-show-dropdown');
-
-    // // const currentMenuItem = document.querySelector('.current-menu-item') as HTMLLIElement;
-
-
+      // const currentPage = __remixRouter.state.location.pathname;
+      parent.classList.remove('et-hover');
+      parent.classList.remove('et-show-dropdown');
+    }, 1000);
   };
 
   return (
@@ -86,7 +66,8 @@ export const Header = () => {
                       <nav className="et-menu-nav">
                         <ul id="menu-main-nav" className="et-menu nav">
                           {/* HOME */}
-                          <li className="menu-item current-menu-item menu-item--depth-0">
+                          <li className="menu-item menu-item--depth-0">
+                            {/* <li className="menu-item current-menu-item menu-item--depth-0"> */}
                             <a
                               href="/"
                               aria-current="page"
@@ -98,14 +79,9 @@ export const Header = () => {
                           </li>
                           {/* ABOUT */}
                           <li className="menu-item menu-item-has-children menu-item--depth-0"
-                            onFocus={() => {
-                              console.log('About Focus');
-                            }}
-
+                            onFocus={() => {}}
                             onMouseOver={handleMouseOver}
-                            onBlur={() => {
-                              console.log('About Blur');
-                            }}
+                            onBlur={() => {}}
                             onMouseOut={handleMouseOut}
                           >
                             <a
@@ -127,10 +103,23 @@ export const Header = () => {
                               </li>
                             </ul>
                           </li>
-                          <li className="menu-item menu-item-has-children menu-item--depth-2">
-                            <a href="/" tabIndex={0}>Practice Areas</a>
+                          <li
+                            className="menu-item menu-item-has-children menu-item--depth-2 et-reverse-direction-nav"
+                            onFocus={() => {}}
+                            onMouseOver={handleMouseOver}
+                            onBlur={() => {}}
+                            onMouseOut={handleMouseOut}
+                          >
+                            <a href="/" tabIndex={0}>
+                              Practice Areas
+                            </a>
                             <ul className="sub-menu">
-                              <li className="menu-item menu-item--depth-1">
+                              <li className="menu-item menu-item--depth-1"
+                                onFocus={() => {}}
+                                onMouseOver={handleMouseOver}
+                                onBlur={() => {}}
+                                onMouseOut={handleMouseOut}
+                              >
                                 <a
                                   href="nursing-home-abuse/index.htm"
                                   tabIndex={0}
@@ -139,7 +128,13 @@ export const Header = () => {
                                   Nursing Home Abuse
                                 </a>
                               </li>
-                              <li className="menu-item menu-item-has-children menu-item--depth-1">
+                              <li
+                                className="menu-item menu-item-has-children menu-item--depth-1"
+                                onFocus={() => {}}
+                                onMouseOver={handleMouseOver}
+                                onBlur={() => {}}
+                                onMouseOut={handleMouseOut}
+                              >
                                 <a
                                   href="other-practice-areas/index.htm"
                                   tabIndex={0}
@@ -147,7 +142,10 @@ export const Header = () => {
                                 >
                                   Other Practice Areas
                                 </a>
-                                <ul className="sub-menu">
+                                <ul
+                                  className="sub-menu"
+                                  style={{left: "auto", }}
+                                >
                                   <li className="menu-item menu-item--depth-2">
                                     <a
                                       href="business-general-counsel-business-transactions/index.htm"
@@ -221,7 +219,8 @@ export const Header = () => {
                           id="menu-main-nav-1"
                           className="et-menu nav downwards"
                         >
-                          <li className="menu-item current-menu-item menu-item--depth-0">
+                          <li className="menu-item menu-item--depth-0">
+                            {/* <li className="menu-item current-menu-item menu-item--depth-0"> */}
                             <a
                               href="/"
                               aria-current="page"
