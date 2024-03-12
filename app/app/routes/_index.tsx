@@ -3,9 +3,13 @@ import {Header} from "../components/Header";
 import {Footer} from "../components/Footer";
 
 // ASSETS //
+// Fonts
+import "../google-fonts/google-fonts.css"
+import "../google-fonts/css-1"
+import "../google-fonts/css-2"
+import "../google-fonts/css-3"
+
 // Images
-// import BgContentMob from "../wp-content/uploads/sites/1302270/2023/09/bg-content-mob.jpg"
-// import BgShortFormMob from "../wp-content/uploads/sites/1302270/2023/09/bg-short-form-mob.jpg"
 import Icon1 from "../wp-content/uploads/sites/1302270/2021/06/icon1.png"
 import Icon2 from "../wp-content/uploads/sites/1302270/2021/06/icon2.png"
 import Icon3 from "../wp-content/uploads/sites/1302270/2021/06/icon3.png"
@@ -15,14 +19,13 @@ import VillardImg from "../wp-content/uploads/sites/1302270/2022/06/Villard-S-Ba
 // Styles
 import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb01971f6d6ca0432cdb0afa00588fa621b5cb7.css"
 import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
-import "../google-fonts/css"
 import "../styles/mobilenav.css"
 import "../styles/dsethtml.css"
 import "../styles/dsethtml2.css"
-import "../styles/home.css";
+// import "../styles/home.css";
 export const meta: MetaFunction = () => {
   return [
-    {title: "New Remix SPA"},
+    {title: "Bastien Law"},
     {name: "description", content: "Welcome to Remix (SPA Mode)!"},
   ];
 };
@@ -242,8 +245,7 @@ export default function Index() {
                             <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_button_alignment_tablet_center et_pb_module ">
                               <a
                                 className="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
-                                href="contact/index.htm"
-                                data-wpel-link="internal"
+                                href="/contact"
                               >
                                 Contact Today
                               </a>
@@ -322,9 +324,9 @@ export default function Index() {
                           </div>
                         </div>
                         <div className="et_pb_row et_pb_row_4 fl-practice-area-blurb fl-ada-tab-fix et_pb_equal_columns et_pb_gutters2">
-                          <a href="nursing-home-abuse/index.htm">
-                            <div className="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
-                              <div className="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_0 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
+                          <div className="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+                            <div className="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_0 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
+                              <a href="/nursing-home-abuse">
                                 <div className="et_pb_module_inner">
                                   <div
                                     className="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light"
@@ -334,14 +336,12 @@ export default function Index() {
                                       <div className="et_pb_blurb_container">
                                         <span className="card-icon">
                                           <img
-                                            // decoding="async"
-                                            // src="../wp-content/uploads/sites/1302270/2021/06/icon1.png"
                                             src={Icon1}
                                             alt="Nursing Home Abuse"
                                             className="et-waypoint et_pb_animation_top"
                                             width={79}
                                             height={80}
-                                          // loading="lazy"
+                                            loading="lazy"
                                           />
                                         </span>
                                         <div className="et_pb_blurb_description">
@@ -351,9 +351,9 @@ export default function Index() {
                                     </div>
                                   </div>
                                 </div>
-                              </div>
+                              </a>
                             </div>
-                          </a>
+                          </div>
                           <div className="et_pb_column et_pb_column_1_3 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
                             <a href="other-practice-areas/index.htm">
                               <div className="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_1 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
@@ -386,7 +386,7 @@ export default function Index() {
                             </a>
                           </div>
                           <div className="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                            <a href="about/index.htm">
+                            <a href="about">
                               <div className="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_2 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
                                 <div className="et_pb_module_inner">
                                   <div
@@ -398,7 +398,6 @@ export default function Index() {
                                         <span className="card-icon">
                                           <img
                                             decoding="async"
-                                            // src="../wp-content/uploads/sites/1302270/2021/06/icon3.png"
                                             src={Icon3}
                                             alt="About My Firm"
                                             className="et-waypoint et_pb_animation_top"
@@ -417,10 +416,10 @@ export default function Index() {
                               </div>
                             </a>
                           </div>
-                          <a href="/about">
+                          <a href="about">
                           </a>
                         </div>
-                        <a href="/about">
+                        <a href="about">
                         </a>
                       </div>
                       <div className="et_pb_section et_pb_section_4 content-3 fl-home-sec-5 et_pb_with_background et_section_regular">
@@ -430,13 +429,11 @@ export default function Index() {
                               <div className="et_pb_blurb_content">
                                 <div className="et_pb_main_blurb_image">
                                   <a
-                                    href="attorney/bastein-villard-s/index.htm"
-                                    data-wpel-link="internal"
+                                    href="/bastein-villard-s"
                                   >
                                     <span className="et_pb_image_wrap et_pb_only_image_mode_wrap">
                                       <img
                                         decoding="async"
-                                        // src="../wp-content/uploads/sites/1302270/2022/06/Villard-S-Bastein.jpg"
                                         src={VillardImg}
                                         alt="Villard S. Bastein"
                                         className="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"
@@ -515,14 +512,11 @@ export default function Index() {
                                   protect you at every opportunity. Call my office
                                   today at{" "}
                                   <span className="nap-item nap-item--phone">
-                                    <a
-                                      href="tel:+1-404-865-1952"
-                                      data-wpel-link="internal"
-                                    >
+                                    <a href="tel:+1-404-865-1952">
                                       404-865-1952
                                     </a>
                                   </span>
-                                  to get started.
+                                  {" "}to get started.
                                 </p>
                               </div>
                             </div>

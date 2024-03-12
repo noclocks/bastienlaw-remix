@@ -1,6 +1,9 @@
 import {MouseEvent} from "react";
 import Logo from "../wp-content/uploads/sites/1302270/2021/06/logo.jpg"
 
+import "../styles/home.css"
+import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
+
 export const Header = () => {
 
   const handleMouseOver = (e: MouseEvent) => {
@@ -29,7 +32,7 @@ export const Header = () => {
           <div className="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_row--with-menu">
             <div className="et_pb_column et_pb_column_2_5 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough">
               <div className="et_pb_module et_pb_image et_pb_image_0_tb_header">
-                <a href="/" data-wpel-link="internal">
+                <a href="/">
                   <span className="et_pb_image_wrap ">
                     <img
                       decoding="async"
@@ -50,7 +53,7 @@ export const Header = () => {
               <div className="et_pb_module et_pb_text et_pb_text_1_tb_header fl-darklinks fl-cta fl-margin-bottom  et_pb_text_align_right et_pb_text_align_center-tablet et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <span className="nap-item nap-item--phone">
-                    <a href="tel:+1-404-865-1952" data-wpel-link="internal">
+                    <a href="tel:+1-404-865-1952">
                       404-865-1952
                     </a>
                   </span>
@@ -72,7 +75,6 @@ export const Header = () => {
                               href="/"
                               aria-current="page"
                               tabIndex={0}
-                              data-wpel-link="internal"
                             >
                               Home
                             </a>
@@ -87,16 +89,14 @@ export const Header = () => {
                             <a
                               href="/about"
                               tabIndex={0}
-                              data-wpel-link="internal"
                             >
                               About
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item menu-item--depth-1">
                                 <a
-                                  href="/attorney/bastein-villard-s"
+                                  href="/bastein-villard-s"
                                   tabIndex={0}
-                                  data-wpel-link="internal"
                                 >
                                   Villard S. Bastien
                                 </a>
@@ -121,9 +121,8 @@ export const Header = () => {
                                 onMouseOut={handleMouseOut}
                               >
                                 <a
-                                  href="nursing-home-abuse/index.htm"
+                                  href="/nursing-home-abuse"
                                   tabIndex={0}
-                                  data-wpel-link="internal"
                                 >
                                   Nursing Home Abuse
                                 </a>
@@ -136,9 +135,8 @@ export const Header = () => {
                                 onMouseOut={handleMouseOut}
                               >
                                 <a
-                                  href="other-practice-areas/index.htm"
+                                  href="/other-practice-areas"
                                   tabIndex={0}
-                                  data-wpel-link="internal"
                                 >
                                   Other Practice Areas
                                 </a>
@@ -148,9 +146,8 @@ export const Header = () => {
                                 >
                                   <li className="menu-item menu-item--depth-2">
                                     <a
-                                      href="business-general-counsel-business-transactions/index.htm"
+                                      href="/business-general-counsel-business-transactions"
                                       tabIndex={0}
-                                      data-wpel-link="internal"
                                     >
                                       Business General Counsel/ Business
                                       Transactions
@@ -158,18 +155,16 @@ export const Header = () => {
                                   </li>
                                   <li className="menu-item menu-item--depth-2">
                                     <a
-                                      href="criminal-law-defense/index.htm"
+                                      href="/criminal-law-defense"
                                       tabIndex={0}
-                                      data-wpel-link="internal"
                                     >
                                       Criminal Law Defense
                                     </a>
                                   </li>
                                   <li className="menu-item menu-item--depth-2">
                                     <a
-                                      href="serious-injury/index.htm"
+                                      href="/serious-injury"
                                       tabIndex={0}
-                                      data-wpel-link="internal"
                                     >
                                       Serious Injury
                                     </a>
@@ -180,9 +175,8 @@ export const Header = () => {
                           </li>
                           <li className="menu-item menu-item--depth-0">
                             <a
-                              href="contact/index.htm"
+                              href="contact"
                               tabIndex={0}
-                              data-wpel-link="internal"
                             >
                               Contact
                             </a>
@@ -190,11 +184,11 @@ export const Header = () => {
                         </ul>
                       </nav>
                     </div>
-                    <div className="et_mobile_nav_menu">
+                    {/* <div className="et_mobile_nav_menu">
                       <div className="mobile_nav closed">
                         <span className="mobile_menu_bar" />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -225,25 +219,22 @@ export const Header = () => {
                               href="/"
                               aria-current="page"
                               tabIndex={0}
-                              data-wpel-link="internal"
                             >
                               Home
                             </a>
                           </li>
                           <li className="menu-item menu-item-has-children menu-item--depth-0">
                             <a
-                              href="about/index.htm"
+                              href="about"
                               tabIndex={0}
-                              data-wpel-link="internal"
                             >
                               About
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item menu-item--depth-1">
                                 <a
-                                  href="attorney/bastein-villard-s/index.htm"
+                                  href="bastein-villard-s"
                                   tabIndex={0}
-                                  data-wpel-link="internal"
                                 >
                                   Villard S. Bastien
                                 </a>
@@ -262,7 +253,6 @@ export const Header = () => {
                                 <a
                                   href="nursing-home-abuse/index.htm"
                                   tabIndex={0}
-                                  data-wpel-link="internal"
                                 >
                                   Nursing Home Abuse
                                 </a>
@@ -271,7 +261,6 @@ export const Header = () => {
                                 <a
                                   href="other-practice-areas/index.htm"
                                   tabIndex={0}
-                                  data-wpel-link="internal"
                                 >
                                   Other Practice Areas
                                 </a>
@@ -280,7 +269,6 @@ export const Header = () => {
                                     <a
                                       href="business-general-counsel-business-transactions/index.htm"
                                       tabIndex={0}
-                                      data-wpel-link="internal"
                                     >
                                       Business General Counsel/ Business
                                       Transactions
@@ -290,7 +278,6 @@ export const Header = () => {
                                     <a
                                       href="criminal-law-defense/index.htm"
                                       tabIndex={0}
-                                      data-wpel-link="internal"
                                     >
                                       Criminal Law Defense
                                     </a>
@@ -299,7 +286,6 @@ export const Header = () => {
                                     <a
                                       href="serious-injury/index.htm"
                                       tabIndex={0}
-                                      data-wpel-link="internal"
                                     >
                                       Serious Injury
                                     </a>
@@ -312,7 +298,6 @@ export const Header = () => {
                             <a
                               href="contact/index.htm"
                               tabIndex={0}
-                              data-wpel-link="internal"
                             >
                               Contact
                             </a>
@@ -331,9 +316,8 @@ export const Header = () => {
               <div className="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper et_pb_button_alignment_center et_pb_module ">
                 <a
                   className="et_pb_button et_pb_button_0_tb_header fl-3-column fl-cta-button fl-email-btn et_pb_bg_layout_light"
-                  href="contact/index.htm"
+                  href="contact"
                   data-icon=""
-                  data-wpel-link="internal"
                 >
                   Email
                 </a>
@@ -342,7 +326,7 @@ export const Header = () => {
                 <div className="et_pb_text_inner">
                   <span className="et-pb-icon fl-phone-icon"></span>{" "}
                   <span className="nap-item nap-item--phone">
-                    <a href="tel:+1-404-865-1952" data-wpel-link="internal">
+                    <a href="tel:+1-404-865-1952">
                       Call
                     </a>
                   </span>
