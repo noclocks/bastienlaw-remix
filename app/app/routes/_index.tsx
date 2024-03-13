@@ -3,6 +3,13 @@ import {Header} from "../components/Header";
 import {Footer} from "../components/Footer";
 
 // ASSETS //
+// Fonts
+import "../styles/typography.css"
+// import "../google-fonts/google-fonts.css"
+// import "../google-fonts/css-1"
+// import "../google-fonts/css-2"
+// import "../google-fonts/css-3"
+
 // Images
 // import BgContentMob from "../wp-content/uploads/sites/1302270/2023/09/bg-content-mob.jpg"
 // import BgShortFormMob from "../wp-content/uploads/sites/1302270/2023/09/bg-short-form-mob.jpg"
