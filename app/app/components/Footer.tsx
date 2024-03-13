@@ -1,7 +1,8 @@
 
 import Logo from "../wp-content/uploads/sites/1302270/2021/06/logo.jpg"
+import HelpForm from "./HelpForm";
 
-export interface FooterProps { }
+export interface FooterProps {}
 
 export const Footer = () => {
 
@@ -24,7 +25,9 @@ export const Footer = () => {
                     data-form_id={2}
                     data-nf_tp_num={0}
                     data-redirect_id={0}
-                  ></div>
+                  >
+                    <HelpForm />
+                  </div>
                 </div>
               </div>
             </div>
@@ -59,11 +62,10 @@ export const Footer = () => {
             </div>
             <div className="et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough">
               <div className="et_pb_module et_pb_image et_pb_image_0_tb_footer">
-                <a href="/" data-wpel-link="internal">
+                <a href="/">
                   <span className="et_pb_image_wrap ">
                     <img
                       decoding="async"
-                      // src="wp-content/uploads/sites/1302270/2021/06/logo.jpg"
                       src={Logo}
                       alt="Law Offices of Villard Bastien, LLC"
                       title=""
@@ -82,10 +84,7 @@ export const Footer = () => {
                   <p>
                     Phone:{" "}
                     <span className="nap-item nap-item--phone">
-                      <a
-                        href="tel:+1-404-865-1952"
-                        data-wpel-link="internal"
-                      >
+                      <a href="tel:+1-404-865-1952">
                         404-865-1952
                       </a>
                     </span>
@@ -100,8 +99,7 @@ export const Footer = () => {
               <div className="et_pb_button_module_wrapper et_pb_button_1_tb_footer_wrapper et_pb_button_alignment_center et_pb_module ">
                 <a
                   className="et_pb_button et_pb_button_1_tb_footer et_pb_bg_layout_dark"
-                  href="atlanta-medical-malpractice-law-office/index.htm"
-                  data-wpel-link="internal"
+                  href="/atlanta-medical-malpractice-law-office"
                 >
                   Atlanta Office
                 </a>
@@ -117,57 +115,44 @@ export const Footer = () => {
                       <p style={{textAlign: "center"}}>
                         © {new Date().getFullYear() + " "}
                         <a
-                          href="https://lawyers.findlaw.com/profile/view/4438170_1"
+                          href="https://bastienlaw.com"
                           target="_blank"
-                          data-wpel-link="external"
                           rel="noopener noreferrer"
                         >
                           Law Offices of Villard Bastien, LLC
-                        </a>{" "}
-                        • All Rights Reserved
+                        </a>
+                        {" "}• All Rights Reserved
                       </p>
                     </div>
                     <div className="flfooterlink">
                       <p style={{textAlign: "center"}}>
-                        <a
-                          href="disclaimer/index.htm"
-                          data-wpel-link="internal"
-                        >
+                        <a href="/disclaimer">
                           Disclaimer
                         </a>
                         &nbsp;|{" "}
-                        <a
-                          href="site-map/index.htm"
-                          data-wpel-link="internal"
-                        >
+                        <a href="/site-map">
                           Site Map
                         </a>
                         &nbsp;|{" "}
-                        <a
-                          href="privacy/index.htm"
-                          data-wpel-link="internal"
-                        >
+                        <a href="/privacy">
                           Privacy Policy
-                        </a>{" "}
-                        |&nbsp;
+                        </a>
+                        {" "}|&nbsp;
                         <a
-                          href="https://www.lawyermarketing.com/"
+                          href="https://github.com/noclocks"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-wpel-link="external"
                         >
                           Business Development Solutions
-                        </a>{" "}
-                        by{" "}
+                        </a>
+                        {" "}by{" "}
                         <a
-                          href="https://www.findlaw.com/"
+                          href="https://noclocks.dev"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-wpel-link="external"
                         >
-                          FindLaw
+                          No Clocks, LLC
                         </a>
-                        , part of Thomson Reuters
                       </p>
                     </div>
                   </div>

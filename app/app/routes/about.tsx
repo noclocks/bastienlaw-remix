@@ -12,7 +12,7 @@ import {
 // Styles
 import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb01971f6d6ca0432cdb0afa00588fa621b5cb7.css"
 import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
-import "../google-fonts/css"
+import "../google-fonts/google-fonts.css"
 import "../styles/mobilenav.css"
 import "../styles/dsethtml.css"
 import "../styles/dsethtml2.css"
@@ -22,6 +22,7 @@ import "../styles/about.css"
 // Components
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
+import {meta} from "../routes/_index";
 
 export const links: LinksFunction = () => (
   [
@@ -29,9 +30,10 @@ export const links: LinksFunction = () => (
   ]
 );
 
-export const meta: MetaFunction = () => [
-  // your meta here
-];
+// export const meta: MetaFunction = () => [
+//   // your meta here
+// ];
+
 
 // export const loader = async ({ request }: LoaderFunctionArgs) => {
 //   return null;
@@ -86,7 +88,7 @@ export default function About() {
                               <a
                                 // property="item"
                                 // typeof="WebPage"
-                                href="../" data-wpel-link="internal"
+                                href="../"
                               >
                                 <span
                                 // property="name"
@@ -119,8 +121,11 @@ export default function About() {
                             quickly.</p>
                           <p>Learn about my professional history:</p>
                           <ul>
-                            <li><a href="../attorney/bastein-villard-s"
-                              data-wpel-link="internal">Villard Bastien</a></li>
+                            <li>
+                              <a href="/bastein-villard-s">
+                                Villard Bastien
+                              </a>
+                            </li>
                           </ul>
                           <h2>How I Demonstrate My Commitment To My Clients</h2>
                           <p>When I moved to Atlanta in 2008, I opened up the <span
@@ -128,15 +133,13 @@ export default function About() {
                             LLC</span>, where I mainly represent individuals who sustain
                             injuries or who have died as a result of the negligence and
                             malpractice of individuals or corporations, including those who have
-                            <a href="../nursing-home-abuse"
-                              data-wpel-link="internal"> suffered abuse in nursing homes</a>.
+                            <a href="/nursing-home-abuse"> suffered abuse in nursing homes</a>.
                             This is after years of studying law across the globe in pursuit of
                             my master&rsquo;s degree in international business law and even serving as
                             an insurance adjuster for large insurance companies.
                           </p>
                           <p>I have taken a different approach to my <a
-                            href="../other-practice-areas"
-                            data-wpel-link="internal">representation of injured
+                            href="../other-practice-areas">representation of injured
                             individuals</a> and estate claims for the death of their loved
                             ones. Each client becomes personal and has an intimate direction in
                             their case. No two cases are similar. Each client gets the attention
@@ -150,9 +153,8 @@ export default function About() {
                           <p>I am a native New Yorker, licensed to practice law in Georgia, New
                             York and New Jersey. I speak fluent English, Spanish and French. You
                             can reach my office in Atlanta by calling me at <span
-                              className="nap-item nap-item--phone"><a href="tel:+1-404-865-1952"
-                                data-wpel-link="internal">404-865-1952</a></span> or <a
-                                  href="../contact" data-wpel-link="internal">emailing
+                              className="nap-item nap-item--phone"><a href="tel:+1-404-865-1952">404-865-1952</a></span> or <a
+                                href="../contact">emailing
                               me</a>.</p>
                         </div>
                       </div>
@@ -166,23 +168,27 @@ export default function About() {
                           <div className="menu-practice-areas-container">
                             <ul id="menu-practice-areas" className="menu">
                               <li className="menu-item menu-item--depth-0"><a
-                                href="../nursing-home-abuse" tabIndex={0}
-                                data-wpel-link="internal">Nursing Home Abuse</a></li>
+                                href="../nursing-home-abuse" tabIndex={0}>
+                                Nursing Home Abuse
+                              </a>
+                              </li>
                               <li className="menu-item menu-item-has-children menu-item--depth-0">
-                                <a href="../other-practice-areas" tabIndex={0}
-                                  data-wpel-link="internal">Other Practice Areas</a>
+                                <a href="../other-practice-areas" tabIndex={0}>
+                                  Other Practice Areas
+                                </a>
                                 <ul className="sub-menu">
                                   <li className="menu-item menu-item--depth-1"><a
                                     href="../business-general-counsel-business-transactions"
-                                    tabIndex={0} data-wpel-link="internal">Business
+                                    tabIndex={0}>Business
                                     General Counsel/ Business Transactions</a></li>
                                   <li className="menu-item menu-item--depth-1"><a
                                     href="../criminal-law-defense"
-                                    tabIndex={0} data-wpel-link="internal">Criminal
+                                    tabIndex={0}>Criminal
                                     Law Defense</a></li>
                                   <li className="menu-item menu-item--depth-1"><a
-                                    href="../serious-injury" tabIndex={0}
-                                    data-wpel-link="internal">Serious Injury</a>
+                                    href="../serious-injury" tabIndex={0}>
+                                    Serious Injury
+                                  </a>
                                   </li>
                                 </ul>
                               </li>
