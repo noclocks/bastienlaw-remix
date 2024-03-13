@@ -4,10 +4,11 @@ import {Footer} from "../components/Footer";
 
 // ASSETS //
 // Fonts
-import "../google-fonts/google-fonts.css"
-import "../google-fonts/css-1"
-import "../google-fonts/css-2"
-import "../google-fonts/css-3"
+import "../styles/typography.css"
+// import "../google-fonts/google-fonts.css"
+// import "../google-fonts/css-1"
+// import "../google-fonts/css-2"
+// import "../google-fonts/css-3"
 
 // Images
 import Icon1 from "../wp-content/uploads/sites/1302270/2021/06/icon1.png"
