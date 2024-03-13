@@ -1,6 +1,13 @@
 # Law Offices of Villard Bastien Website
 
+> [!NOTE]
 > Bastien Law website (clone) built with Remix (+ Vite for SPA mode)
+
+<!-- BADGES:Start -->
+
+[![Automate Changelog](https://github.com/noclocks/bastienlaw-remix/actions/workflows/changelog.yml/badge.svg)](https://github.com/noclocks/bastienlaw-remix/actions/workflows/changelog.yml)
+
+<!-- BADGES:End -->
 
 ## Tech Stack
 
