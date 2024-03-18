@@ -54,9 +54,7 @@ export const Header = () => {
               <div className="et_pb_module et_pb_text et_pb_text_1_tb_header fl-darklinks fl-cta fl-margin-bottom  et_pb_text_align_right et_pb_text_align_center-tablet et_pb_bg_layout_light">
                 <div className="et_pb_text_inner">
                   <span className="nap-item nap-item--phone">
-                    <a href="tel:+1-404-865-1952">
-                      404-865-1952
-                    </a>
+                    <a href="tel:+1-404-865-1952">404-865-1952</a>
                   </span>
                 </div>
               </div>
@@ -72,33 +70,24 @@ export const Header = () => {
                           {/* HOME */}
                           <li className="menu-item menu-item--depth-0">
                             {/* <li className="menu-item current-menu-item menu-item--depth-0"> */}
-                            <a
-                              href="/"
-                              aria-current="page"
-                              tabIndex={0}
-                            >
+                            <a href="/" aria-current="page" tabIndex={0}>
                               Home
                             </a>
                           </li>
                           {/* ABOUT */}
-                          <li className="menu-item menu-item-has-children menu-item--depth-0"
+                          <li
+                            className="menu-item menu-item-has-children menu-item--depth-0"
                             onFocus={() => {}}
                             onMouseOver={handleMouseOver}
                             onBlur={() => {}}
                             onMouseOut={handleMouseOut}
                           >
-                            <a
-                              href="/about"
-                              tabIndex={0}
-                            >
+                            <a href="/about" tabIndex={0}>
                               About
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item menu-item--depth-1">
-                                <a
-                                  href="/bastein-villard-s"
-                                  tabIndex={0}
-                                >
+                                <a href="/bastein-villard-s" tabIndex={0}>
                                   Villard S. Bastien
                                 </a>
                               </li>
@@ -111,20 +100,27 @@ export const Header = () => {
                             onBlur={() => {}}
                             onMouseOut={handleMouseOut}
                           >
-                            <a href="/" tabIndex={0}>
+                            <a
+                              href="/other-practice-areas"
+                              // aria-haspopup="true"
+                              // onClick={() => null}
+                              tabIndex={0}
+                              style={{
+                                cursor: "default",
+                                // pointerEvents: "unset",
+                              }}
+                            >
                               Practice Areas
                             </a>
                             <ul className="sub-menu">
-                              <li className="menu-item menu-item--depth-1"
+                              <li
+                                className="menu-item menu-item--depth-1"
                                 onFocus={() => {}}
                                 onMouseOver={handleMouseOver}
                                 onBlur={() => {}}
                                 onMouseOut={handleMouseOut}
                               >
-                                <a
-                                  href="/nursing-home-abuse"
-                                  tabIndex={0}
-                                >
+                                <a href="/nursing-home-abuse" tabIndex={0}>
                                   Nursing Home Abuse
                                 </a>
                               </li>
@@ -135,15 +131,12 @@ export const Header = () => {
                                 onBlur={() => {}}
                                 onMouseOut={handleMouseOut}
                               >
-                                <a
-                                  href="/other-practice-areas"
-                                  tabIndex={0}
-                                >
+                                <a href="/other-practice-areas" tabIndex={0}>
                                   Other Practice Areas
                                 </a>
                                 <ul
                                   className="sub-menu"
-                                  style={{left: "auto", }}
+                                  style={{ left: "auto" }}
                                 >
                                   <li className="menu-item menu-item--depth-2">
                                     <a
@@ -163,10 +156,7 @@ export const Header = () => {
                                     </a>
                                   </li>
                                   <li className="menu-item menu-item--depth-2">
-                                    <a
-                                      href="/serious-injury"
-                                      tabIndex={0}
-                                    >
+                                    <a href="/serious-injury" tabIndex={0}>
                                       Serious Injury
                                     </a>
                                   </li>
@@ -175,10 +165,7 @@ export const Header = () => {
                             </ul>
                           </li>
                           <li className="menu-item menu-item--depth-0">
-                            <a
-                              href="contact"
-                              tabIndex={0}
-                            >
+                            <a href="contact" tabIndex={0}>
                               Contact
                             </a>
                           </li>
@@ -216,37 +203,24 @@ export const Header = () => {
                         >
                           <li className="menu-item menu-item--depth-0">
                             {/* <li className="menu-item current-menu-item menu-item--depth-0"> */}
-                            <a
-                              href="/"
-                              aria-current="page"
-                              tabIndex={0}
-                            >
+                            <a href="/" aria-current="page" tabIndex={0}>
                               Home
                             </a>
                           </li>
                           <li className="menu-item menu-item-has-children menu-item--depth-0">
-                            <a
-                              href="about"
-                              tabIndex={0}
-                            >
+                            <a href="about" tabIndex={0}>
                               About
                             </a>
                             <ul className="sub-menu">
                               <li className="menu-item menu-item--depth-1">
-                                <a
-                                  href="bastein-villard-s"
-                                  tabIndex={0}
-                                >
+                                <a href="bastein-villard-s" tabIndex={0}>
                                   Villard S. Bastien
                                 </a>
                               </li>
                             </ul>
                           </li>
                           <li className="menu-item menu-item-has-children menu-item--depth-0">
-                            <a
-                              href="/"
-                              tabIndex={0}
-                            >
+                            <a href="/" tabIndex={0}>
                               Practice Areas
                             </a>
                             <ul className="sub-menu">
@@ -296,10 +270,7 @@ export const Header = () => {
                             </ul>
                           </li>
                           <li className="menu-item menu-item--depth-0">
-                            <a
-                              href="contact/index.htm"
-                              tabIndex={0}
-                            >
+                            <a href="contact/index.htm" tabIndex={0}>
                               Contact
                             </a>
                           </li>
@@ -327,9 +298,7 @@ export const Header = () => {
                 <div className="et_pb_text_inner">
                   <span className="et-pb-icon fl-phone-icon"></span>{" "}
                   <span className="nap-item nap-item--phone">
-                    <a href="tel:+1-404-865-1952">
-                      Call
-                    </a>
+                    <a href="tel:+1-404-865-1952">Call</a>
                   </span>
                 </div>
               </div>
