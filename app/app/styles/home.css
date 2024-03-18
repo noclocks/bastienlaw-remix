@@ -3361,7 +3361,7 @@ body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc 
 }
 
 div.et_pb_section.et_pb_section_4 {
-  background-image: "../wp-content(wp-content/uploads/sites/1302270/2021/06/bg-content.jpg)" !important;
+  background-image: url(../wp-content/uploads/sites/1302270/2021/06/bg-content.jpg) !important;
 }
 
 .et_pb_section_4.et_pb_section {
