@@ -7,13 +7,9 @@ import {Header} from "../components/Header";
 import BastienVillardSImage from "../wp-content/uploads/sites/1302270/2022/06/bastien_villard_s.jpg";
 
 // Styles
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb01971f6d6ca0432cdb0afa00588fa621b5cb7.css"
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
-import "../styles/mobilenav.css"
-import "../styles/dsethtml.css"
-import "../styles/dsethtml2.css"
-import "../styles/home.css";
-import "../styles/about.css"
+// import "../styles/mobilenav.css"
+// import "../styles/dsethtml.css"
+// import "../styles/dsethtml2.css"
 import "../styles/bastein-villard-s.css";
 
 export const links: LinksFunction = () => (

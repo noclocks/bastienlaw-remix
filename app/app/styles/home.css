@@ -592,7 +592,7 @@ a:where(:not(.wp-element-button)) {
   }
 
   body {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     color: #666;
     background-color: #fff;
@@ -638,7 +638,7 @@ a:where(:not(.wp-element-button)) {
 
   code,
   pre {
-    font-family: Courier New, monospace;
+    font-family: 'Courier New', monospace;
     margin-bottom: 10px;
   }
 
@@ -2160,22 +2160,6 @@ h6 {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Josefin Sans", Helvetica, Arial, Lucida, sans-serif;
-}
-
-body,
-input,
-textarea,
-select {
-  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
-}
-
 .et_pb_row,
 .container {
   width: 90%;
@@ -2610,10 +2594,6 @@ select {
 
 .et_pb_text_1_tb_header.et_pb_text a:hover {
   color: #003366 !important;
-}
-
-.et_pb_text_1_tb_header a {
-  font-family: "Josefin Sans", Helvetica, Arial, Lucida, sans-serif;
 }
 
 .et_pb_menu_0_tb_header.et_pb_menu ul li a {

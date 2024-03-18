@@ -10,18 +10,14 @@ import {
 } from "@remix-run/react";
 
 // Styles
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb01971f6d6ca0432cdb0afa00588fa621b5cb7.css"
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
 import "../styles/mobilenav.css"
 import "../styles/dsethtml.css"
 import "../styles/dsethtml2.css"
-import "../styles/home.css";
 import "../styles/about.css"
 
 // Components
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
-import {meta} from "../routes/_index";
 
 export const links: LinksFunction = () => (
   [

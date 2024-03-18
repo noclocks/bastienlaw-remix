@@ -5,10 +5,6 @@ import {Footer} from "../components/Footer";
 // ASSETS //
 // Fonts
 import "../styles/typography.css"
-// import "../google-fonts/google-fonts.css"
-// import "../google-fonts/css-1"
-// import "../google-fonts/css-2"
-// import "../google-fonts/css-3"
 
 // Images
 import Icon1 from "../wp-content/uploads/sites/1302270/2021/06/icon1.png"
@@ -18,12 +14,11 @@ import NursingHomeImg from "../wp-content/uploads/sites/1302270/2021/06/nursing.
 import VillardImg from "../wp-content/uploads/sites/1302270/2022/06/Villard-S-Bastein.jpg"
 
 // Styles
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb01971f6d6ca0432cdb0afa00588fa621b5cb7.css"
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
 import "../styles/mobilenav.css"
 import "../styles/dsethtml.css"
 import "../styles/dsethtml2.css"
-// import "../styles/home.css";
+import "../styles/home.css";
+
 export const meta: MetaFunction = () => {
   return [
     {title: "Bastien Law"},
@@ -34,19 +29,6 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      {/* <style
-        id="divi-style-parent-css"
-        dangerouslySetInnerHTML={{__html: ""}}
-      /> */}
-      {/* <link
-        rel="stylesheet"
-        // id="divi-style-css"
-        // href="styles/home.css"
-        // href={HomeStyle}
-      /> */}
-      {/* <meta charSet="UTF-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <link rel="pingback" href="https://www.bastienlaw.com/xmlrpc.php" /> */}
       <title>
         Nursing Home Abuse Attorney | Law Offices of Villard Bastien, LLC |
         Medical Malpractice
