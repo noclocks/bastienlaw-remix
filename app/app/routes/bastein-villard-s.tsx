@@ -14,7 +14,7 @@ import "../styles/dsethtml.css"
 import "../styles/dsethtml2.css"
 import "../styles/home.css";
 import "../styles/about.css"
-import "~/styles/bastein-villard-s.css";
+import "../styles/bastein-villard-s.css";
 
 export const links: LinksFunction = () => (
   [
