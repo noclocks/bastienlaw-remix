@@ -10,8 +10,6 @@ import {
 } from "@remix-run/react";
 
 // Styles
-import "../styles/dsethtml.css"
-import "../styles/dsethtml2.css"
 import "../styles/about.css"
 
 // Components
