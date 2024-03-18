@@ -22,7 +22,7 @@ export const meta: MetaFunction = () => [
   // your meta here
 ];
 
-export default function RouteComponent() {
+export default function BastienVillardS() {
   return (
     <div id="page-container">
       <div id="et-boc" className="et-boc">
@@ -49,7 +49,7 @@ export default function RouteComponent() {
                         </div>
                       </div>
                     </div>
-                    <div className="et_pb_section et_section_regular">
+                    <div className="et_pb_section et_pb_section_2 et_section_regular">
                       <div className="et_pb_row et_pb_row_3">
                         <div className="et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_4 fl-main-content  et_pb_css_mix_blend_mode_passthrough"
                           id="fl-main-content">
