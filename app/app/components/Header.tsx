@@ -2,7 +2,8 @@ import {MouseEvent} from "react";
 import Logo from "../wp-content/uploads/sites/1302270/2021/06/logo.jpg"
 
 import "../styles/home.css"
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
+import "../styles/dsethtml.css";
+import "../styles/dsethtml2.css";
 
 export const Header = () => {
 
