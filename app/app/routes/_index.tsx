@@ -14,7 +14,6 @@ import NursingHomeImg from "../wp-content/uploads/sites/1302270/2021/06/nursing.
 import VillardImg from "../wp-content/uploads/sites/1302270/2022/06/Villard-S-Bastein.jpg"
 
 // Styles
-import "../styles/mobilenav.css"
 import "../styles/dsethtml.css"
 import "../styles/dsethtml2.css"
 import "../styles/home.css";

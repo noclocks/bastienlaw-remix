@@ -8,7 +8,6 @@ import {
 
 import "./styles/typography.css";
 import './styles/global.css';
-// import "./styles/mobilenav.css"
 // import "./styles/dsethtml.css"
 // import "./styles/dsethtml2.css"
 

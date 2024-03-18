@@ -7,7 +7,6 @@ import {Header} from "../components/Header";
 import BastienVillardSImage from "../wp-content/uploads/sites/1302270/2022/06/bastien_villard_s.jpg";
 
 // Styles
-// import "../styles/mobilenav.css"
 // import "../styles/dsethtml.css"
 // import "../styles/dsethtml2.css"
 import "../styles/bastein-villard-s.css";

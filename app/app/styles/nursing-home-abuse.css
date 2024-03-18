@@ -1,9 +1,4 @@
 /* nursing-home-abuse.css */
-
-.mobile_nav.closed .et_mobile_menu {
-  display: none
-}
-
 .nav li.et-hover>ul,
 .menu li.et-hover>ul {
   visibility: visible !important;

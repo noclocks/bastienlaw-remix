@@ -25,3 +25,8 @@ h6 {
 .et_pb_text_1_tb_header a {
   font-family: 'Josefin Sans', Helvetica, Arial, Lucida, sans-serif
 }
+
+/* Mobile */
+.mobile_nav.closed .et_mobile_menu {
+  display: none
+}
