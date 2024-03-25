@@ -8,6 +8,7 @@ import {
 
 import "./styles/typography.css";
 import './styles/global.css';
+import ScrollToTopButton from "./components/ScrollToTopButton";
 // import "./styles/dsethtml.css"
 // import "./styles/dsethtml2.css"
 
@@ -21,7 +22,7 @@ export function Layout({children}: {children: React.ReactNode}) {
         <Links />
       </head>
       <body>
-        {children}
+        {[children, <ScrollToTopButton key={0} />]}
         <ScrollRestoration />
         <Scripts />
       </body>
