@@ -15,6 +15,8 @@ import {
 // import "./styles/home.css";
 // import "./styles/about.css"
 
+import ChatbotScript from "./components/ChatBot";
+
 export function Layout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
@@ -28,6 +30,7 @@ export function Layout({children}: {children: React.ReactNode}) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <ChatbotScript />
       </body>
     </html>
   );
