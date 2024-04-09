@@ -1,0 +1,55 @@
+/* ScrollToTopButtonStyle.css */
+
+/* Create animated classes for showing & hiding */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Create a class for the button */
+.ScrollToTopButton {
+  position: fixed;
+  bottom: 125px;
+  right: 0px;
+  z-index: 1000;
+  background-color: #342e24;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  animation: fadeIn 1.5s;
+}
+
+.ScrollToTopButtonHidden {
+  position: fixed;
+  bottom: 125px;
+  right: 0px;
+  z-index: 1000;
+  background-color: #342e24;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  animation: fadeOut 1.5s;
+  /* visibility: hidden 1.5s; */
+  display: none;
+  /* transition: display 1.5s;
+  transform: translateX(40px); */
+}

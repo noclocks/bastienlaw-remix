@@ -1,4 +1,11 @@
-import {useMemo, useState} from "react";
+import {
+  MouseEvent,
+  useMemo,
+  useRef,
+  useState
+} from "react";
+
+import "../styles/ScrollToTopButtonStyle.css";
 
 const ArrowUpSVG = () => {
   return (
@@ -23,49 +30,60 @@ const ArrowUpSVG = () => {
 }
 
 const ScrollToTopButton = () => {
-  const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const buttonRef = useRef(null);
+
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    const button = e.currentTarget as HTMLButtonElement;
+    button.setAttribute("class", "ScrollToTopButtonHidden");
   };
 
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
-  useMemo(() => {
+    useMemo(() => {
     const window = globalThis.window;
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
-        const viewportHeight = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) / 2;
-        setIsButtonVisible(scrollY > viewportHeight);
+        const viewportHeight =
+          (window.innerHeight ||
+            document.documentElement.clientHeight ||
+            document.body.clientHeight) / 2;
+
+        const button = buttonRef.current;
+
+        // Show button with animation
+        if (scrollY > viewportHeight && button) {
+
+          globalThis.document.getElementById("scroll-to-top-button")?.animate([
+            { opacity: 0 },
+            { opacity: 1 },
+          ], {
+            duration: 2000,
+            fill: "forwards",
+            // keyframes: [
+            //   { opacity: 0 },
+            //   { opacity: 1 },
+            // ],
+
+          });
+
+          setIsButtonVisible(true);
+        } else {
+          setIsButtonVisible(false);
+        }
       });
-    } else {
-      setIsButtonVisible(false);
     }
-  }, [globalThis]);
+  }, [globalThis.window, setIsButtonVisible]);
 
   return (
-    <button
-      className="scroll-to-top-button"
-      onClick={handleClick}
-      style={{
-        position: "fixed",
-        bottom: "125px",
-        right: "0px",
-        zIndex: 1000,
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        color: "white",
-        border: "none",
-        borderTopLeftRadius: "10px",
-        borderBottomLeftRadius: "10px",
-        width: "40px",
-        height: "40px",
-        cursor: "pointer",
-        display: isButtonVisible ? "flex" : "none",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <ArrowUpSVG />
-    </button>
+      <button
+        ref={buttonRef}
+        className={isButtonVisible ? "ScrollToTopButton" : "ScrollToTopButtonHidden"}
+        onClick={handleClick}
+      >
+        <ArrowUpSVG />
+      </button>
   );
 };
 
