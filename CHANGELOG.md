@@ -6,6 +6,10 @@
 
 ## [Unreleased]
 
+## Bug Fixes
+
+- Fix changelog.yml workflow for PRs ([719ef3f](https://github.com/noclocks/bastienlaw-remix/commit/719ef3fb364f65271adcf438bd4ed271ae5b08f7))  - (Jimmy Briggs)
+
 ## Features
 
 - Re-structure font assets and styles ([e7825dd](https://github.com/noclocks/bastienlaw-remix/commit/e7825dd7595d2bfa7e08fed08bdb97b1ce3a17c2))  - (Jimmy Briggs)
