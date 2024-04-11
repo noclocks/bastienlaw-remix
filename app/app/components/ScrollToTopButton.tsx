@@ -74,7 +74,7 @@ const ScrollToTopButton = () => {
         }
       });
     }
-  }, [globalThis.window, setIsButtonVisible]);
+    }, [buttonRef, setIsButtonVisible]);
 
   return (
       <button

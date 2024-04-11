@@ -80,7 +80,8 @@ export default function HelpForm() {
     setEmail(event.target.value);
   };
 
-  const handleCheckbox = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleCheckbox = () => {
+    // const handleCheckbox = (event: React.ChangeEvent<HTMLInputElement>) => {
     console.log('checkbox clicked', !checkbox);
     // event.preventDefault();
     setCheckbox(!checkbox);
