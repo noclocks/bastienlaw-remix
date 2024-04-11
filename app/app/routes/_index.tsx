@@ -84,14 +84,13 @@ export default function Index() {
         rel="alternate"
         type="application/rss+xml"
         title="Law Offices of Villard Bastien, LLC » Feed"
-        href="feed/index.htm"
+        href="feed"
       /> */}
       {/* <meta content="Divi Child v.3.19.18" name="generator" /> */}
       {/* <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=2.0"
       /> */}
-      {/* <link rel="https://api.w.org/" href="wp-json/index.htm" /> */}
       {/* <link
         rel="alternate"
         type="application/json"

@@ -40,24 +40,10 @@ export default function CriminalLawDefense() {
                     <div className='et_pb_column et_pb_column_4_4 et_pb_column_1_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child'>
                       <div className='et_pb_module et_pb_dcsbcm_divi_breadcrumbs_module et_pb_dcsbcm_divi_breadcrumbs_module_0_tb_body'>
                         <div className='et_pb_module_inner'>
-                          <ol
-                            className='dcsbcm_divi_breadcrumbs'
-                            // vocab='http://schema.org/'
-                            // typeof='BreadcrumbList'
-                          >
-                            <li
-                              className='dcsbcm_divi_breadcrumb'
-                              // property='itemListElement'
-                              // typeof='ListItem'
-                            >
-                              <a
-                                // property='item'
-                                // typeof='WebPage'
-                                href='/'
-                              >
-                                <span
-                                  // property='name'
-                                >
+                          <ol className='dcsbcm_divi_breadcrumbs'>
+                            <li className='dcsbcm_divi_breadcrumb'>
+                              <a href='/'>
+                                <span>
                                   Home
                                 </span>
                               </a>
@@ -127,10 +113,7 @@ export default function CriminalLawDefense() {
                         <p>
                           Do not wait. Call me now at{' '}
                           <span className='nap-item nap-item--phone'>
-                            <a
-                              href='tel:+1-404-865-1952'
-                              data-wpel-link='internal'
-                            >
+                            <a href='tel:+1-404-865-1952'>
                               404-865-1952
                             </a>
                           </span>{' '}
@@ -158,7 +141,6 @@ export default function CriminalLawDefense() {
                                 <a
                                   href='../nursing-home-abuse/index.htm'
                                   tabIndex={0}
-                                  data-wpel-link='internal'
                                 >
                                   Nursing Home Abuse
                                 </a>
@@ -167,7 +149,6 @@ export default function CriminalLawDefense() {
                                 <a
                                   href='../other-practice-areas/index.htm'
                                   tabIndex={0}
-                                  data-wpel-link='internal'
                                 >
                                   Other Practice Areas
                                 </a>
@@ -176,10 +157,8 @@ export default function CriminalLawDefense() {
                                     <a
                                       href='../business-general-counsel-business-transactions/index.htm'
                                       tabIndex={0}
-                                      data-wpel-link='internal'
                                     >
-                                      Business General Counsel/ Business
-                                      Transactions
+                                      Business General Counsel / Business Transactions
                                     </a>
                                   </li>
                                   <li className='menu-item current-menu-item menu-item--depth-1'>
@@ -187,7 +166,6 @@ export default function CriminalLawDefense() {
                                       href='index.htm'
                                       aria-current='page'
                                       tabIndex={0}
-                                      data-wpel-link='internal'
                                     >
                                       Criminal Law Defense
                                     </a>
@@ -196,7 +174,6 @@ export default function CriminalLawDefense() {
                                     <a
                                       href='../serious-injury/index.htm'
                                       tabIndex={0}
-                                      data-wpel-link='internal'
                                     >
                                       Serious Injury
                                     </a>

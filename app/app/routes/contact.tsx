@@ -52,15 +52,8 @@ export default function Contact() {
                               // property="itemListElement"
                               // typeof="ListItem"
                             >
-                              <a
-                                // property="item"
-                                // typeof="WebPage"
-                                href='../index.htm'
-                                data-wpel-link='internal'
-                              >
-                                <span
-                                // property="name"
-                                >
+                              <a href='../index.htm'>
+                                <span>
                                   Home
                                 </span>
                               </a>
@@ -129,7 +122,6 @@ export default function Contact() {
                                   href='index.htm'
                                   aria-current='page'
                                   tabIndex={0}
-                                  data-wpel-link='internal'
                                 >
                                   Nursing Home Abuse
                                 </a>
@@ -138,7 +130,6 @@ export default function Contact() {
                                 <a
                                   href='../other-practice-areas/index.htm'
                                   tabIndex={0}
-                                  data-wpel-link='internal'
                                 >
                                   Other Practice Areas
                                 </a>
@@ -147,7 +138,6 @@ export default function Contact() {
                                     <a
                                       href='../business-general-counsel-business-transactions/index.htm'
                                       tabIndex={0}
-                                      data-wpel-link='internal'
                                     >
                                       Business General Counsel/ Business
                                       Transactions
@@ -157,7 +147,6 @@ export default function Contact() {
                                     <a
                                       href='../criminal-law-defense/index.htm'
                                       tabIndex={0}
-                                      data-wpel-link='internal'
                                     >
                                       Criminal Law Defense
                                     </a>
@@ -166,7 +155,6 @@ export default function Contact() {
                                     <a
                                       href='../serious-injury/index.htm'
                                       tabIndex={0}
-                                      data-wpel-link='internal'
                                     >
                                       Serious Injury
                                     </a>
