@@ -39,7 +39,7 @@ button.et_close_search_field {
 .et_close_search_field:after {
   font-family: 'ETmodules';
   content: '\4d';
-  speak: none;
+  /* speak: none; */
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
@@ -70,7 +70,7 @@ button.et_close_search_field {
   font-family: 'ETmodules';
   content: "\55";
   font-size: 17px;
-  speak: none;
+  /* speak: none; */
   display: inline-block;
   box-sizing: border-box
 }
@@ -917,7 +917,7 @@ a:where(:not(.wp-element-button)) {
   .mobile_menu_bar:before,
   a.et_pb_more_button:after {
     font-family: ETmodules !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     -webkit-font-feature-settings: normal;
@@ -941,7 +941,7 @@ a:where(:not(.wp-element-button)) {
 
   .et-pb-icon {
     font-family: ETmodules;
-    speak: none;
+    /* speak: none; */
     font-weight: 400;
     -webkit-font-feature-settings: normal;
     font-feature-settings: normal;
@@ -2925,7 +2925,7 @@ body #page-container .et_pb_section .et_pb_button_0_tb_header:hover:before {
     margin-right: auto
   }
 
-  et_pb_image_0_tb_header .et_pb_image_wrap img {}
+  .et_pb_image_0_tb_header .et_pb_image_wrap img {}
 
   .et_pb_text_1_tb_header {
     font-size: 30px
@@ -2970,7 +2970,7 @@ body #page-container .et_pb_section .et_pb_button_0_tb_header:hover:before {
     padding-top: 10px !important
   }
 
-  et_pb_image_0_tb_header .et_pb_image_wrap img {}
+  .et_pb_image_0_tb_header .et_pb_image_wrap img {}
 
   .et_pb_text_0_tb_header,
   .et_pb_menu_0_tb_header {
