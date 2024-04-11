@@ -2,7 +2,13 @@ name: Automate Changelog
 on:
   workflow_dispatch:
   push:
+    branches: [ $default-branch ]
+    paths-ignore:
+      - CHANGELOG.md
+      - .github/**    
   pull_request:
+    branches: [ $default-branch ]
+    types: [ opened, synchronize, closed ]
 jobs:
   changelog:
     name: Generate Changelog
@@ -24,7 +30,8 @@ jobs:
         id: print-changelog
         run: |
           cat "CHANGELOG.md"
-      - name: Commit and Push
+      # Commit and push the updated changelog, IF not a pull request
+      - name: Commit and Push Changelog
         if: github.event_name != 'pull_request'
         run: |
           git config user.name 'github-actions[bot]'
