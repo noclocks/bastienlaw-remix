@@ -2,12 +2,12 @@ name: Automate Changelog
 on:
   workflow_dispatch:
   push:
-    branches: [ $default-branch ]
+    branches: [ main ]
     paths-ignore:
       - CHANGELOG.md
       - .github/**    
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ main ]
     types: [ opened, synchronize, closed ]
 jobs:
   changelog:
