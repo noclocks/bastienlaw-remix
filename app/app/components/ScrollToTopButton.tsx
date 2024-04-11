@@ -41,39 +41,36 @@ const ScrollToTopButton = () => {
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
     useMemo(() => {
-    const window = globalThis.window;
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        const viewportHeight =
-          (window.innerHeight ||
-            document.documentElement.clientHeight ||
-            document.body.clientHeight) / 2;
+      const window = globalThis.window;
+      if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', () => {
+          const scrollY = window.scrollY;
+          const viewportHeight =
+            (window.innerHeight ||
+              document.documentElement.clientHeight ||
+              document.body.clientHeight) / 2;
 
-        const button = buttonRef.current;
+          const button = buttonRef.current;
 
-        // Show button with animation
-        if (scrollY > viewportHeight && button) {
+          // Show button with animation
+          if (scrollY > viewportHeight && button) {
+            globalThis.document
+              .getElementById('scroll-to-top-button')
+              ?.animate([{opacity: 0}, {opacity: 1}], {
+                duration: 2000,
+                fill: 'forwards',
+                // keyframes: [
+                //   { opacity: 0 },
+                //   { opacity: 1 },
+                // ],
+              });
 
-          globalThis.document.getElementById("scroll-to-top-button")?.animate([
-            { opacity: 0 },
-            { opacity: 1 },
-          ], {
-            duration: 2000,
-            fill: "forwards",
-            // keyframes: [
-            //   { opacity: 0 },
-            //   { opacity: 1 },
-            // ],
-
-          });
-
-          setIsButtonVisible(true);
-        } else {
-          setIsButtonVisible(false);
-        }
-      });
-    }
+            setIsButtonVisible(true);
+          } else {
+            setIsButtonVisible(false);
+          }
+        });
+      }
     }, [buttonRef, setIsButtonVisible]);
 
   return (
