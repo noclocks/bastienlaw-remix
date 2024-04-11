@@ -415,7 +415,7 @@ export default function Index() {
                                       <img
                                         decoding="async"
                                         src={VillardImg}
-                                        alt="Villard S. Bastein"
+                                        alt="Villard S. Bastien"
                                         className="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"
                                         width={267}
                                         height={267}
@@ -426,7 +426,7 @@ export default function Index() {
                                 </div>
                                 <div className="et_pb_blurb_container">
                                   <div className="et_pb_blurb_description">
-                                    <p>Villard S. Bastein</p>
+                                    <p>Villard S. Bastien</p>
                                   </div>
                                 </div>
                               </div>
