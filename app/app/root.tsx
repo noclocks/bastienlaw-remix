@@ -12,6 +12,8 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 // import "./styles/dsethtml.css"
 // import "./styles/dsethtml2.css"
 
+import ChatbotScript from "./components/ChatBot";
+
 export function Layout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
@@ -25,6 +27,7 @@ export function Layout({children}: {children: React.ReactNode}) {
         {[children, <ScrollToTopButton key={0} />]}
         <ScrollRestoration />
         <Scripts />
+        <ChatbotScript />
       </body>
     </html>
   );
