@@ -101,9 +101,7 @@ export const Header = () => {
                             onMouseOut={handleMouseOut}
                           >
                             <a
-                              href="/other-practice-areas"
-                              // aria-haspopup="true"
-                              // onClick={() => null}
+                              href="#?"
                               tabIndex={0}
                               style={{
                                 cursor: "default",
