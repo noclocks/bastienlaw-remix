@@ -42,7 +42,7 @@ export default function AtlantaMedicalMalpracticeLawOffice() {
                         <div className='et_pb_module_inner'>
                           <ol className='dcsbcm_divi_breadcrumbs'>
                             <li className='dcsbcm_divi_breadcrumb'>
-                              <a href='../index.htm'>
+                              <a href='/'>
                                 <span>Home</span>
                               </a>
                               <meta
@@ -133,7 +133,7 @@ export default function AtlantaMedicalMalpracticeLawOffice() {
                             >
                               <li className='menu-item current-menu-item menu-item--depth-0'>
                                 <a
-                                  href='index.htm'
+                                  href='nursing-home-abuse'
                                   aria-current='page'
                                   tabIndex={0}
                                 >
@@ -142,7 +142,7 @@ export default function AtlantaMedicalMalpracticeLawOffice() {
                               </li>
                               <li className='menu-item menu-item-has-children menu-item--depth-0'>
                                 <a
-                                  href='../other-practice-areas/index.htm'
+                                  href='other-practice-areas'
                                   tabIndex={0}
                                 >
                                   Other Practice Areas
@@ -150,7 +150,7 @@ export default function AtlantaMedicalMalpracticeLawOffice() {
                                 <ul className='sub-menu'>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../business-general-counsel-business-transactions/index.htm'
+                                      href='business-general-counsel-business-transactions'
                                       tabIndex={0}
                                     >
                                       Business General Counsel/ Business
@@ -159,7 +159,7 @@ export default function AtlantaMedicalMalpracticeLawOffice() {
                                   </li>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../criminal-law-defense/index.htm'
+                                      href='criminal-law-defense'
                                       tabIndex={0}
                                     >
                                       Criminal Law Defense
@@ -167,7 +167,7 @@ export default function AtlantaMedicalMalpracticeLawOffice() {
                                   </li>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../serious-injury/index.htm'
+                                      href='serious-injury'
                                       tabIndex={0}
                                     >
                                       Serious Injury

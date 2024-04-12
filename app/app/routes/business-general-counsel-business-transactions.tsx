@@ -40,24 +40,10 @@ export default function BusinessGeneralCounselBusinessTransactions() {
                     <div className='et_pb_column et_pb_column_4_4 et_pb_column_1_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child'>
                       <div className='et_pb_module et_pb_dcsbcm_divi_breadcrumbs_module et_pb_dcsbcm_divi_breadcrumbs_module_0_tb_body'>
                         <div className='et_pb_module_inner'>
-                          <ol
-                            className='dcsbcm_divi_breadcrumbs'
-                            // vocab="http://schema.org/"
-                            // typeof="BreadcrumbList"
-                          >
-                            <li
-                              className='dcsbcm_divi_breadcrumb'
-                              // property="itemListElement"
-                              // typeof="ListItem"
-                            >
-                              <a
-                                // property="item"
-                                // typeof="WebPage"
-                                href='../index.htm'
-                              >
-                                <span
-                                // property="name"
-                                >
+                          <ol className='dcsbcm_divi_breadcrumbs'>
+                            <li className='dcsbcm_divi_breadcrumb'>
+                              <a href='/'>
+                                <span>
                                   Home
                                 </span>
                               </a>
@@ -160,7 +146,7 @@ export default function BusinessGeneralCounselBusinessTransactions() {
                               </li>
                               <li className='menu-item menu-item-has-children current-menu-parent menu-item--depth-0'>
                                 <a
-                                  href='../other-practice-areas/index.htm'
+                                  href='other-practice-areas'
                                   tabIndex={0}
                                 >
                                   Other Practice Areas
@@ -168,17 +154,16 @@ export default function BusinessGeneralCounselBusinessTransactions() {
                                 <ul className='sub-menu'>
                                   <li className='menu-item current-menu-item menu-item--depth-1'>
                                     <a
-                                      href='index.htm'
+                                      href='business-general-counsel-business-transactions'
                                       aria-current='page'
                                       tabIndex={0}
                                     >
-                                      Business General Counsel/ Business
-                                      Transactions
+                                      Business General Counsel / Business Transactions
                                     </a>
                                   </li>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../criminal-law-defense/index.htm'
+                                      href='criminal-law-defense'
                                       tabIndex={0}
                                     >
                                       Criminal Law Defense
@@ -186,7 +171,7 @@ export default function BusinessGeneralCounselBusinessTransactions() {
                                   </li>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../serious-injury/index.htm'
+                                      href='serious-injury'
                                       tabIndex={0}
                                     >
                                       Serious Injury

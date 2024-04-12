@@ -139,7 +139,7 @@ export default function CriminalLawDefense() {
                             >
                               <li className='menu-item menu-item--depth-0'>
                                 <a
-                                  href='../nursing-home-abuse/index.htm'
+                                  href='nursing-home-abuse'
                                   tabIndex={0}
                                 >
                                   Nursing Home Abuse
@@ -147,7 +147,7 @@ export default function CriminalLawDefense() {
                               </li>
                               <li className='menu-item menu-item-has-children current-menu-parent menu-item--depth-0'>
                                 <a
-                                  href='../other-practice-areas/index.htm'
+                                  href='other-practice-areas'
                                   tabIndex={0}
                                 >
                                   Other Practice Areas
@@ -155,7 +155,7 @@ export default function CriminalLawDefense() {
                                 <ul className='sub-menu'>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../business-general-counsel-business-transactions/index.htm'
+                                      href='business-general-counsel-business-transactions'
                                       tabIndex={0}
                                     >
                                       Business General Counsel / Business Transactions
@@ -163,7 +163,7 @@ export default function CriminalLawDefense() {
                                   </li>
                                   <li className='menu-item current-menu-item menu-item--depth-1'>
                                     <a
-                                      href='index.htm'
+                                      href='criminal-law-defense'
                                       aria-current='page'
                                       tabIndex={0}
                                     >
@@ -172,7 +172,7 @@ export default function CriminalLawDefense() {
                                   </li>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../serious-injury/index.htm'
+                                      href='serious-injury'
                                       tabIndex={0}
                                     >
                                       Serious Injury

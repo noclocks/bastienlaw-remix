@@ -224,7 +224,7 @@ export default function Index() {
                             <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_button_alignment_tablet_center et_pb_module ">
                               <a
                                 className="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
-                                href="/contact"
+                                href="contact"
                               >
                                 Contact Today
                               </a>
@@ -334,7 +334,7 @@ export default function Index() {
                             </div>
                           </div>
                           <div className="et_pb_column et_pb_column_1_3 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
-                            <a href="other-practice-areas/index.htm">
+                            <a href="other-practice-areas">
                               <div className="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_1 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
                                 <div className="et_pb_module_inner">
                                   <div

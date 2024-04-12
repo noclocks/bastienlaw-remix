@@ -82,7 +82,7 @@ export default function SeriousInjury() {
                       <p>
                         Do not wait. Call me now at{' '}
                         <span className="nap-item nap-item--phone"><a href="tel:+1-404-865-1952"
-                            data-wpel-link="internal">404-865-1952</a></span>
+                           >404-865-1952</a></span>
                         {' '}for a free consultation. I speak English, Spanish and French.
                       </p>
                     </div>
@@ -96,23 +96,27 @@ export default function SeriousInjury() {
                         <div className="menu-practice-areas-container">
                           <ul id="menu-practice-areas" className="menu">
                             <li className="menu-item menu-item--depth-0">
-                              <a href="../nursing-home-abuse/index.htm" tabIndex={0} data-wpel-link="internal">Nursing
-                                Home Abuse</a>
+                              <a href="nursing-home-abuse" tabIndex={0}>
+                                Nursing Home Abuse
+                              </a>
                             </li>
                             <li className="menu-item menu-item-has-children current-menu-parent menu-item--depth-0">
-                              <a href="../other-practice-areas/index.htm" tabIndex={0} data-wpel-link="internal">Other
-                                Practice Areas</a>
+                              <a href="other-practice-areas" tabIndex={0}>
+                                Other Practice Areas
+                              </a>
                               <ul className="sub-menu">
                                 <li className="menu-item menu-item--depth-1">
-                                  <a href="../business-general-counsel-business-transactions/index.htm" tabIndex={0}
-                                    data-wpel-link="internal">Business General Counsel/ Business Transactions</a>
+                                  <a href="business-general-counsel-business-transactions" tabIndex={0}>
+                                    Business General Counsel/ Business Transactions
+                                  </a>
                                 </li>
                                 <li className="menu-item menu-item--depth-1">
-                                  <a href="../criminal-law-defense/index.htm" tabIndex={0}
-                                    data-wpel-link="internal">Criminal Law Defense</a>
+                                  <a href="criminal-law-defense" tabIndex={0}>
+                                    Criminal Law Defense
+                                  </a>
                                 </li>
                                 <li className="menu-item current-menu-item menu-item--depth-1">
-                                  <a href="index.htm" aria-current="page" tabIndex={0} data-wpel-link="internal">
+                                  <a href="/" aria-current="page" tabIndex={0}>
                                     Serious Injury
                                   </a>
                                 </li>

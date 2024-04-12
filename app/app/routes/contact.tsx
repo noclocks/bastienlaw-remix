@@ -52,7 +52,7 @@ export default function Contact() {
                               // property="itemListElement"
                               // typeof="ListItem"
                             >
-                              <a href='../index.htm'>
+                              <a href='/'>
                                 <span>
                                   Home
                                 </span>
@@ -119,7 +119,7 @@ export default function Contact() {
                             >
                               <li className='menu-item current-menu-item menu-item--depth-0'>
                                 <a
-                                  href='index.htm'
+                                  href='nursing-home-abuse'
                                   aria-current='page'
                                   tabIndex={0}
                                 >
@@ -128,7 +128,7 @@ export default function Contact() {
                               </li>
                               <li className='menu-item menu-item-has-children menu-item--depth-0'>
                                 <a
-                                  href='../other-practice-areas/index.htm'
+                                  href='other-practice-areas'
                                   tabIndex={0}
                                 >
                                   Other Practice Areas
@@ -136,7 +136,7 @@ export default function Contact() {
                                 <ul className='sub-menu'>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../business-general-counsel-business-transactions/index.htm'
+                                      href='business-general-counsel-business-transactions'
                                       tabIndex={0}
                                     >
                                       Business General Counsel/ Business
@@ -145,7 +145,7 @@ export default function Contact() {
                                   </li>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../criminal-law-defense/index.htm'
+                                      href='criminal-law-defense'
                                       tabIndex={0}
                                     >
                                       Criminal Law Defense
@@ -153,7 +153,7 @@ export default function Contact() {
                                   </li>
                                   <li className='menu-item menu-item--depth-1'>
                                     <a
-                                      href='../serious-injury/index.htm'
+                                      href='serious-injury'
                                       tabIndex={0}
                                     >
                                       Serious Injury

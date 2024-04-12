@@ -35,21 +35,10 @@ export default function OtherPracticeAreas() {
                                         <div
                                             className="et_pb_module et_pb_dcsbcm_divi_breadcrumbs_module et_pb_dcsbcm_divi_breadcrumbs_module_0_tb_body">
                                             <div className="et_pb_module_inner">
-                                                <ol className="dcsbcm_divi_breadcrumbs"
-                                                  // vocab="http://schema.org/"
-                                                  // typeof="BreadcrumbList"
-                                                >
-                                                    <li className="dcsbcm_divi_breadcrumb"
-                                                      // property="itemListElement"
-                                                      // typeof="ListItem"
-                                                    >
-                                                      <a
-                                                        // property="item"
-                                                        // typeof="WebPage"
-                                                        href="../index.htm">
-                                                          <span
-                                                            // property="name"
-                                                          >
+                                                <ol className="dcsbcm_divi_breadcrumbs">
+                                                    <li className="dcsbcm_divi_breadcrumb">
+                                                      <a href="/">
+                                                          <span>
                                                             Home
                                                           </span>
                                                       </a>
@@ -83,20 +72,20 @@ export default function OtherPracticeAreas() {
                                                 and New Jersey. You can call me directly by dialing <span
                                                     className="nap-item nap-item--phone"><a href="tel:+1-404-865-1952"
                                                         >404-865-1952</a></span> or you can <a
-                                                    href="../contact/index.htm">reach me
+                                                    href="contact">reach me
                                                     online</a> to talk about your experiences and get solutions that
                                                 work for you.</p>
                                             <h2>Supporting You When The Unexpected Happens</h2>
                                             <p>My extensive legal history and decades working with clients prepare me for almost any issue you may have with the law. In addition to{' '}
-                                                <a href="../nursing-home-abuse/index.htm">
+                                                <a href="nursing-home-abuse">
                                                     my primary practice area
                                                 </a>, I can help you navigate:</p>
                                             <ul>
-                                                <li><a href="../serious-injury/index.htm">
+                                                <li><a href="serious-injury">
                                                     Slip-and-fall accidents</a></li>
-                                                <li><a href="../serious-injury/index.htm">Wrongful death claims</a></li>
-                                                <li><a href="../serious-injury/index.htm">Medical malpractice suits</a></li>
-                                                <li><a href="../criminal-law-defense/index.htm">Criminal defense</a></li>
+                                                <li><a href="serious-injury">Wrongful death claims</a></li>
+                                                <li><a href="serious-injury">Medical malpractice suits</a></li>
+                                                <li><a href="criminal-law-defense">Criminal defense</a></li>
                                             </ul>
                                             <p>You’ll find a kind ear at the <span className="nap-item nap-item--name">Law Offices of Villard Bastien, LLC</span>, to guide you through whatever legal steps are needed to protect you and your loved ones.</p>
                                             <h2>You Can Trust Me To Be Your Strongest Defender</h2>
@@ -116,25 +105,34 @@ export default function OtherPracticeAreas() {
                                                 <h2 className="widgettitle">Practice Areas</h2>
                                                 <div className="menu-practice-areas-container">
                                                     <ul id="menu-practice-areas" className="menu">
-                                                        <li className="menu-item menu-item--depth-0"><a
-                                                                href="../nursing-home-abuse/index.htm" tabIndex={0}
-                                                                >Nursing Home Abuse</a></li>
-                                                        <li
-                                                            className="menu-item menu-item-has-children current-menu-item menu-item--depth-0">
-                                                            <a href="index.htm" aria-current="page" tabIndex={0}
-                                                                >Other Practice Areas</a>
+                                                        <li className="menu-item menu-item--depth-0">
+                                                            <a href="nursing-home-abuse" tabIndex={0}>
+                                                                Nursing Home Abuse
+                                                            </a>
+                                                        </li>
+                                                        <li className="menu-item menu-item-has-children current-menu-item menu-item--depth-0">
+                                                            <a href="/" aria-current="page" tabIndex={0}>
+                                                                Other Practice Areas
+                                                            </a>
                                                             <ul className="sub-menu">
-                                                                <li className="menu-item menu-item--depth-1"><a
-                                                                        href="../business-general-counsel-business-transactions/index.htm"
-                                                                        tabIndex={0} >Business
-                                                                        General Counsel/ Business Transactions</a></li>
-                                                                <li className="menu-item menu-item--depth-1"><a
-                                                                        href="../criminal-law-defense/index.htm"
-                                                                        tabIndex={0}>Criminal
-                                                                        Law Defense</a></li>
-                                                                <li className="menu-item menu-item--depth-1"><a
-                                                                        href="../serious-injury/index.htm" tabIndex={0}
-                                                                        >Serious Injury</a>
+                                                                <li className="menu-item menu-item--depth-1">
+                                                                    <a
+                                                                        href="business-general-counsel-business-transactions"
+                                                                        tabIndex={0}
+                                                                    >
+                                                                        Business General Counsel / Business Transactions
+                                                                    </a>
+                                                                </li>
+                                                                <li className="menu-item menu-item--depth-1">
+                                                                    <a
+                                                                        href="criminal-law-defense"
+                                                                        tabIndex={0}>
+                                                                            Criminal Law Defense</a></li>
+                                                                <li className="menu-item menu-item--depth-1">
+                                                                    <a
+                                                                        href="serious-injury" tabIndex={0}>
+                                                                            Serious Injury
+                                                                    </a>
                                                                 </li>
                                                             </ul>
                                                         </li>

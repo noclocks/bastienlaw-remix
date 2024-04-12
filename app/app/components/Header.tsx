@@ -224,7 +224,7 @@ export const Header = () => {
                             <ul className="sub-menu">
                               <li className="menu-item menu-item--depth-1">
                                 <a
-                                  href="nursing-home-abuse/index.htm"
+                                  href="nursing-home-abuse"
                                   tabIndex={0}
                                 >
                                   Nursing Home Abuse
@@ -232,7 +232,7 @@ export const Header = () => {
                               </li>
                               <li className="menu-item menu-item-has-children menu-item--depth-1">
                                 <a
-                                  href="other-practice-areas/index.htm"
+                                  href="other-practice-areas"
                                   tabIndex={0}
                                 >
                                   Other Practice Areas
@@ -240,16 +240,15 @@ export const Header = () => {
                                 <ul className="sub-menu">
                                   <li className="menu-item menu-item--depth-2">
                                     <a
-                                      href="business-general-counsel-business-transactions/index.htm"
+                                      href="business-general-counsel-business-transactions"
                                       tabIndex={0}
                                     >
-                                      Business General Counsel/ Business
-                                      Transactions
+                                      Business General Counsel / Business Transactions
                                     </a>
                                   </li>
                                   <li className="menu-item menu-item--depth-2">
                                     <a
-                                      href="criminal-law-defense/index.htm"
+                                      href="criminal-law-defense"
                                       tabIndex={0}
                                     >
                                       Criminal Law Defense
@@ -257,7 +256,7 @@ export const Header = () => {
                                   </li>
                                   <li className="menu-item menu-item--depth-2">
                                     <a
-                                      href="serious-injury/index.htm"
+                                      href="serious-injury"
                                       tabIndex={0}
                                     >
                                       Serious Injury
@@ -268,7 +267,7 @@ export const Header = () => {
                             </ul>
                           </li>
                           <li className="menu-item menu-item--depth-0">
-                            <a href="contact/index.htm" tabIndex={0}>
+                            <a href="contact" tabIndex={0}>
                               Contact
                             </a>
                           </li>

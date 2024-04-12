@@ -103,7 +103,7 @@ export const Footer = (props: FooterProps) => {
               <div className='et_pb_button_module_wrapper et_pb_button_1_tb_footer_wrapper et_pb_button_alignment_center et_pb_module '>
                 <a
                   className='et_pb_button et_pb_button_1_tb_footer et_pb_bg_layout_dark'
-                  href='/atlanta-medical-malpractice-law-office'
+                  href='atlanta-medical-malpractice-law-office'
                 >
                   Atlanta Office
                 </a>
@@ -119,8 +119,7 @@ export const Footer = (props: FooterProps) => {
                       <p style={{textAlign: 'center'}}>
                         © {new Date().getFullYear() + ' '}
                         <a
-                          href='https://bastienlaw.com'
-                          target='_blank'
+                          href='/'
                           rel='noopener noreferrer'
                         >
                           Law Offices of Villard Bastien, LLC
