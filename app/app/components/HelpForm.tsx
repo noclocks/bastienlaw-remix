@@ -180,6 +180,7 @@ export default function HelpForm() {
             }}>
             Name
             <input
+              id='email-me-name'
               type='text'
               name='name'
               style={{

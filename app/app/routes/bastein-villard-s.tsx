@@ -1,5 +1,7 @@
+import {MouseEvent} from "react";
 import type {LinksFunction} from "@remix-run/node";
 import {MetaFunction, isRouteErrorResponse, useRouteError} from "@remix-run/react";
+
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
 
@@ -20,6 +22,15 @@ export const meta: MetaFunction = () => [
 ];
 
 export default function BastienVillardS() {
+  const handleEmailMeClick = (e: MouseEvent): void => {
+    e.preventDefault();
+    const emailMe = document.getElementById('email-me-name');
+    if (emailMe) {
+      emailMe.scrollIntoView({behavior: 'smooth'});
+      emailMe.focus();
+    }
+  };
+
   return (
     <div id="page-container">
       <div id="et-boc" className="et-boc">
@@ -102,13 +113,17 @@ export default function BastienVillardS() {
                               <h2><strong>Email: </strong></h2>
                             </div>
                           </div>
-                          <div id="email-me"
+                          <div
+                            id="email-me"
                             className="et_pb_module et_pb_text et_pb_text_22 fl-main-content fl-main-content-title  et_pb_text_align_left et_pb_bg_layout_light">
                             <div className="et_pb_text_inner">
                               <div
                                 className="et_pb_button_module_wrapper et_pb_button_wrapper et_pb_button_alignment_ et_pb_module email_me_module_1">
-                                <a className="et_pb_button et_pb_bg_layout_light et_pb_email_attorney"
-                                  href="#email_attorney" data-form_id="3"
+                                <a
+                                  className="et_pb_button et_pb_bg_layout_light et_pb_email_attorney"
+                                  href="#email_attorney"
+                                  onClick={handleEmailMeClick}
+                                  data-form_id="3"
                                   data-post_id="46048">Email me</a>
                               </div>
                             </div>
