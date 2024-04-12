@@ -125,14 +125,18 @@ export const Footer = (props: FooterProps) => {
                         >
                           Law Offices of Villard Bastien, LLC
                         </a>{' '}
-                        • All Rights Reserved
+                        • All Rights Reserved{' '}
                       </p>
                     </div>
                     <div className='flfooterlink'>
                       <p style={{textAlign: 'center'}}>
                         <a href='/disclaimer'>Disclaimer</a>
-                        &nbsp;| <a href='/site-map'>Site Map</a>
-                        &nbsp;| <a href='/privacy'>Privacy Policy</a> |&nbsp;
+                        {/* TODO: Add `sitemap` & `Privacy Policy` */}
+                        &nbsp;|&nbsp;
+                        <a href='/site-map'>Site Map</a>
+                        &nbsp;|&nbsp;
+                        <a href='/privacy'>Privacy Policy</a>
+                        &nbsp;|&nbsp;
                         <a
                           href='https://github.com/noclocks'
                           target='_blank'
