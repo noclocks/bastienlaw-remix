@@ -25,7 +25,7 @@ Full tech stack [here](/techstack.md)
 
 ```zsh
 # Create Remix (+ Vite) SPA app
-npx create-remix@latest --template remix-run/remix/templates/spa app
+pnpm dlx create-remix@latest --template remix-run/remix/templates/spa app
 
 # > Initialize a new git repository?
 No

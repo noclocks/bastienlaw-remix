@@ -4,11 +4,12 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "build": "remix vite:build",
-    "dev": "remix vite:dev",
+    "preinstall": "pnpm dlx only-allow pnpm",
+    "build": "remix vite:build --port 8080",
+    "dev": "remix vite:dev --port 8080",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "preview": "vite preview",
+    "preview": "pnpm dlx vite preview --port 8080",
+    "serve": "npx sirv-cli build/client --single --port 8080 --host",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -32,7 +33,9 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "remix-development-tools": "^4.0.8",
+    "prettier": "^3.2.5",
+    "remix-development-tools": "^4.0.10",
+    "sirv-cli": "^2.0.2",
     "typescript": "^5.1.6",
     "vite": "^5.1.6",
     "vite-tsconfig-paths": "^4.3.2"

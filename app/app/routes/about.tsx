@@ -3,25 +3,18 @@ import type {
   // LoaderFunctionArgs
 } from "@remix-run/node";
 import {
-  MetaFunction,
+  // MetaFunction,
   // useLoaderData,
   isRouteErrorResponse,
   useRouteError
 } from "@remix-run/react";
 
 // Styles
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb01971f6d6ca0432cdb0afa00588fa621b5cb7.css"
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
-import "../styles/mobilenav.css"
-import "../styles/dsethtml.css"
-import "../styles/dsethtml2.css"
-import "../styles/home.css";
 import "../styles/about.css"
 
 // Components
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
-import {meta} from "../routes/_index";
 
 export const links: LinksFunction = () => (
   [
@@ -54,10 +47,11 @@ export default function About() {
                       <div className="et_pb_module et_pb_text et_pb_text_0_tb_body et_pb_text_align_center et_pb_bg_layout_light">
                         <div className="et_pb_text_inner">
                           <p>Dedication. Skill. Innovation.
-                            <br /> Trust The
+                            <br/>
+                            Trust The{' '}
                             <strong>
-                              <span className="nap-item nap-item--name">Law Offices of Villard
-                                Bastien, LLC
+                              <span className="nap-item nap-item--name">
+                                Law Offices of Villard Bastien, LLC
                               </span>
                             </strong>.
                           </p>
@@ -74,28 +68,14 @@ export default function About() {
                       <div
                         className="et_pb_module et_pb_dcsbcm_divi_breadcrumbs_module et_pb_dcsbcm_divi_breadcrumbs_module_0_tb_body">
                         <div className="et_pb_module_inner">
-                          <ol
-                            className="dcsbcm_divi_breadcrumbs"
-                          // vocab="http://schema.org/"
-                          // typeof="BreadcrumbList"
-                          >
-                            <li
-                              className="dcsbcm_divi_breadcrumb"
-                            // property="itemListElement"
-                            // typeof="ListItem"
-                            >
-                              <a
-                                // property="item"
-                                // typeof="WebPage"
-                                href="../"
-                              >
-                                <span
-                                // property="name"
-                                >
+                          <ol className="dcsbcm_divi_breadcrumbs">
+                            <li className="dcsbcm_divi_breadcrumb">
+                              <a href="/">
+                                <span>
                                   Home
                                 </span>
                               </a>
-                              <meta property="position" content="1" />
+                              <meta property="position" content="1"/>
                             </li>
                             <span className="dcsbcm_separator">&nbsp;&raquo;&nbsp;</span><span
                               className="dcsbcm_divi_breadcrumb dcsbcm_divi_breadcrumb-active">About</span>
@@ -107,8 +87,7 @@ export default function About() {
                 </div>
                 <div className="et_pb_section et_pb_section_4_tb_body et_pb_with_background et_section_regular">
                   <div className="et_pb_row et_pb_row_2_tb_body">
-                    <div
-                      className="et_pb_column et_pb_column_2_3 et_pb_column_2_tb_body fl-main-content  et_pb_css_mix_blend_mode_passthrough">
+                    <div className="et_pb_column et_pb_column_2_3 et_pb_column_2_tb_body fl-main-content  et_pb_css_mix_blend_mode_passthrough">
                       <div className="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body">
                         <div id="page" className="hfeed site">
                           <h1>When You Put Your Trust In My Firm, I Rise To The Challenge</h1>
@@ -152,24 +131,27 @@ export default function About() {
                           <p>I am a native New Yorker, licensed to practice law in Georgia, New
                             York and New Jersey. I speak fluent English, Spanish and French. You
                             can reach my office in Atlanta by calling me at <span
-                              className="nap-item nap-item--phone"><a href="tel:+1-404-865-1952">404-865-1952</a></span> or <a
-                                href="../contact">emailing
-                              me</a>.</p>
+                              className="nap-item nap-item--phone">
+                                <a href="tel:+1-516-967-7619">516-967-7619</a>
+                                </span> or <a
+                                href="../contact">
+                                  emailing me
+                                  </a>.
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div
                       className="et_pb_column et_pb_column_1_3 et_pb_column_3_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                      <div id="nav-practice-silo"
-                        className="et_pb_module et_pb_sidebar_0_tb_body nav-practice-silo et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light">
+                      <div id="nav-practice-silo" className="et_pb_module et_pb_sidebar_0_tb_body nav-practice-silo et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light">
                         <div id="nav_menu-2" className="et_pb_widget widget_nav_menu">
                           <h2 className="widgettitle">Practice Areas</h2>
                           <div className="menu-practice-areas-container">
                             <ul id="menu-practice-areas" className="menu">
-                              <li className="menu-item menu-item--depth-0"><a
-                                href="../nursing-home-abuse" tabIndex={0}>
+                              <li className="menu-item menu-item--depth-0">
+                                <a href="../nursing-home-abuse" tabIndex={0}>
                                 Nursing Home Abuse
-                              </a>
+                                </a>
                               </li>
                               <li className="menu-item menu-item-has-children menu-item--depth-0">
                                 <a href="../other-practice-areas" tabIndex={0}>

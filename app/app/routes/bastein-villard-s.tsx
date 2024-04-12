@@ -1,5 +1,7 @@
+import {MouseEvent} from "react";
 import type {LinksFunction} from "@remix-run/node";
 import {MetaFunction, isRouteErrorResponse, useRouteError} from "@remix-run/react";
+
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
 
@@ -7,13 +9,6 @@ import {Header} from "../components/Header";
 import BastienVillardSImage from "../wp-content/uploads/sites/1302270/2022/06/bastien_villard_s.jpg";
 
 // Styles
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb01971f6d6ca0432cdb0afa00588fa621b5cb7.css"
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
-import "../styles/mobilenav.css"
-import "../styles/dsethtml.css"
-import "../styles/dsethtml2.css"
-import "../styles/home.css";
-import "../styles/about.css"
 import "../styles/bastein-villard-s.css";
 
 export const links: LinksFunction = () => (
@@ -26,7 +21,16 @@ export const meta: MetaFunction = () => [
   // your meta here
 ];
 
-export default function RouteComponent() {
+export default function BastienVillardS() {
+  const handleEmailMeClick = (e: MouseEvent): void => {
+    e.preventDefault();
+    const emailMe = document.getElementById('email-me-name');
+    if (emailMe) {
+      emailMe.scrollIntoView({behavior: 'smooth'});
+      emailMe.focus();
+    }
+  };
+
   return (
     <div id="page-container">
       <div id="et-boc" className="et-boc">
@@ -53,7 +57,7 @@ export default function RouteComponent() {
                         </div>
                       </div>
                     </div>
-                    <div className="et_pb_section et_section_regular">
+                    <div className="et_pb_section et_pb_section_2 et_section_regular">
                       <div className="et_pb_row et_pb_row_3">
                         <div className="et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_4 fl-main-content  et_pb_css_mix_blend_mode_passthrough"
                           id="fl-main-content">
@@ -72,7 +76,7 @@ export default function RouteComponent() {
                           <div
                             className="et_pb_module et_pb_text et_pb_text_16  et_pb_text_align_left et_pb_bg_layout_light">
                             <div className="et_pb_text_inner">
-                              <h1>Villard S. Bastein</h1>
+                              <h1>Villard S. Bastien</h1>
                             </div>
                           </div>
                           <div
@@ -87,8 +91,8 @@ export default function RouteComponent() {
                           </div>
                           <div className="et_pb_module fl_people_single fl_people_single_14">
                             <div className="et_pb_module_inner">
-                              <span><a href="tel:+1-404-865-1952">
-                                (404) 865-1952
+                              <span><a href="tel:+1-516-967-7619">
+                                (516) 967-7619
                               </a></span>
                             </div>
                           </div>
@@ -109,13 +113,17 @@ export default function RouteComponent() {
                               <h2><strong>Email: </strong></h2>
                             </div>
                           </div>
-                          <div id="email-me"
+                          <div
+                            id="email-me"
                             className="et_pb_module et_pb_text et_pb_text_22 fl-main-content fl-main-content-title  et_pb_text_align_left et_pb_bg_layout_light">
                             <div className="et_pb_text_inner">
                               <div
                                 className="et_pb_button_module_wrapper et_pb_button_wrapper et_pb_button_alignment_ et_pb_module email_me_module_1">
-                                <a className="et_pb_button et_pb_bg_layout_light et_pb_email_attorney"
-                                  href="#email_attorney" data-form_id="3"
+                                <a
+                                  className="et_pb_bg_layout_light et_pb_email_attorney"
+                                  href="#email_attorney"
+                                  onClick={handleEmailMeClick}
+                                  data-form_id="3"
                                   data-post_id="46048">Email me</a>
                               </div>
                             </div>
