@@ -40,7 +40,7 @@ import {Form} from "@remix-run/react";
 
 // import {useRef} from "react";
 import {init, sendForm} from "@emailjs/browser";
-import {useState} from "react";
+import {useMemo, useState} from "react";
 
 export default function HelpForm() {
   // const {
@@ -86,6 +86,10 @@ export default function HelpForm() {
     // event.preventDefault();
     setCheckbox(!checkbox);
   };
+
+  const isButtonDisabled = useMemo(() => {
+    return !checkbox || email.length === 0;
+  }, [email, checkbox])
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -144,190 +148,183 @@ export default function HelpForm() {
         }}
       </script> */}
       <Form
-        id="contact-form"
+        id='contact-form'
         // method="post"
         // action="/contact"
         onSubmit={handleSubmit}
       >
         <div
           style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            marginBottom: "20px",
-          }}>
-          <h4>
-            Fields marked with an * are required.
-          </h4>
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            marginBottom: '20px',
+          }}
+        >
+          <h4>Fields marked with an * are required.</h4>
         </div>
         {/** Your form elements here */}
         <div
           style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
           }}>
           <label
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              fontWeight: "bold",
-              width: "30%",
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              fontWeight: 'bold',
+              width: '30%',
             }}>
             Name
             <input
-              type="text"
-              name="name"
+              type='text'
+              name='name'
               style={{
-                padding: "12px",
-              }} />
+                padding: '12px',
+              }}/>
           </label>
           <label
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              fontWeight: "bold",
-              width: "30%",
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              fontWeight: 'bold',
+              width: '30%',
             }}>
             Email *
             <input
-              type="email"
-              name="email"
+              type='email'
+              name='email'
               onChange={handleEmail}
               value={email}
               style={{
-                padding: "12px",
-              }} />
+                padding: '12px',
+              }}/>
           </label>
           <label
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              fontWeight: "bold",
-              width: "30%",
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              fontWeight: 'bold',
+              width: '30%',
             }}>
             Phone
             <input
-              type="tel"
-              name="phone"
+              type='tel'
+              name='phone'
               // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               // height={50}
               style={{
-                padding: "12px",
-              }}
-            />
+                padding: '12px',
+              }}/>
           </label>
         </div>
         <br />
         <div>
           <label
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              fontWeight: "bold",
-              width: "100%",
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              fontWeight: 'bold',
+              width: '100%',
             }}>
             Message
             <textarea
-              name="message"
+              name='message'
               rows={5}
               style={{
-                padding: "12px",
-              }} />
+                padding: '12px',
+              }}/>
           </label>
         </div>
         <br />
         <a
-          href="/disclaimer"
+          href='/disclaimer'
           style={{
             // display: "block",
             // textAlign: "center",
-            textDecoration: "underline",
-            color: "#3975ac",
+            textDecoration: 'underline',
+            color: '#3975ac',
           }}>
           Disclaimer
-        </a>
-        {" "}|{" "}
+        </a>{' '}
+        |{' '}
         <a
-          href="/privacy-policy"
+          href='/privacy-policy'
           style={{
             // display: "block",
             // textAlign: "center",
-            textDecoration: "underline",
-            color: "#3975ac",
+            textDecoration: 'underline',
+            color: '#3975ac',
           }}>
           Privacy Policy
         </a>
         <br />
         <span
           style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
           }}>
           {/* <Form itemType="checkbox" /> */}
           <input
-            type="checkbox"
-            name="checkbox"
+            type='checkbox'
+            name='checkbox'
             // defaultChecked={checkbox}
             checked={checkbox}
             onChange={handleCheckbox}
-            // onClick={() => {
-            //   console.log("checkbox clicked");
-            // }}
             style={{
-              appearance: "checkbox",
-              WebkitAppearance: "checkbox",
-              backgroundColor: "#fff",
-              color: "#3975ac",
-              cursor: "pointer",
-              display: "inline-block",
-              padding: "12px",
-              height: "20px",
-              width: "20px",
-            }}
-          />
+              appearance: 'checkbox',
+              WebkitAppearance: 'checkbox',
+              backgroundColor: '#fff',
+              color: '#3975ac',
+              cursor: 'pointer',
+              display: 'inline-block',
+              padding: '12px',
+              height: '20px',
+              width: '20px',
+            }}/>
           <h4
             style={{
-              fontWeight: "bold",
-              marginLeft: "10px",
-              paddingTop: "0",
+              fontWeight: 'bold',
+              marginLeft: '10px',
+              paddingTop: '0',
             }}>
             I Have Read The Disclaimer *
           </h4>
         </span>
-        {/* </label> */}
-        {/* </p> */}
         <br />
         <div
           style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
           }}>
           <button
-            disabled={!checkbox || email.length === 0}
-            type="submit"
+            disabled={isButtonDisabled}
+            type='submit'
             style={{
               display: 'table',
+              pointerEvents: isButtonDisabled ? 'none' : 'auto',
               fontWeight: 600,
-              fontSize: '18px !important',
-              color: '#fff !important',
+              fontSize: '18px',
+              background: '#3975ac',
+              color: isButtonDisabled ? '#ccc' : '#fff',
+              opacity: isButtonDisabled ? 0.5 : 1,
               textDecoration: 'none',
               padding: '4px 0',
               textAlign: 'center',
               borderRadius: 0,
-              background: '#3975ac',
               cursor: 'pointer',
               height: '70px',
               textTransform: 'uppercase',
               width: '270px',
               letterSpacing: '1.5px',
-              // margin: '0 auto !important',
               border: '1px solid #fff',
             }}>
             Contact Me Online
