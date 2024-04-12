@@ -3035,16 +3035,6 @@ body #page-container .et_pb_section .et_pb_button_1_tb_footer:hover {
   background-color: #1d3344
 }
 
-.et_pb_button_1_tb_footer {
-  transition:
-    color 300ms ease 0ms, background-color 300ms ease 0ms
-}
-
-.et_pb_button_1_tb_footer,
-.et_pb_button_1_tb_footer:after {
-  transition: all 300ms ease 0ms
-}
-
 .et_pb_row_3_tb_footer.et_pb_row {
   margin-top: 35px !important
 }

@@ -120,7 +120,7 @@ export default function BastienVillardS() {
                               <div
                                 className="et_pb_button_module_wrapper et_pb_button_wrapper et_pb_button_alignment_ et_pb_module email_me_module_1">
                                 <a
-                                  className="et_pb_button et_pb_bg_layout_light et_pb_email_attorney"
+                                  className="et_pb_bg_layout_light et_pb_email_attorney"
                                   href="#email_attorney"
                                   onClick={handleEmailMeClick}
                                   data-form_id="3"
