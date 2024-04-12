@@ -217,7 +217,8 @@ export default function Index() {
                                   <span className="nap-item nap-item--name">
                                     Law Offices of Villard Bastien, LLC
                                   </span>
-                                  , I will be your champion.
+                                  <br/>
+                                  I will be your champion.
                                 </p>
                               </div>
                             </div>
