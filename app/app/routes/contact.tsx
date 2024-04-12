@@ -66,7 +66,7 @@ export default function Contact() {
                               &nbsp;&raquo;&nbsp;
                             </span>
                             <span className='dcsbcm_divi_breadcrumb dcsbcm_divi_breadcrumb-active'>
-                              Nursing Home Abuse
+                              Contact
                             </span>
                           </ol>
                         </div>
