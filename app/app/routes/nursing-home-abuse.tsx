@@ -85,8 +85,8 @@ export default function NursingHomeAbuse() {
                           </span>
                           , at{" "}
                           <span className="nap-item nap-item--phone">
-                            <a href="tel:+1-404-865-1952">
-                              404-865-1952
+                            <a href="tel:+1-516-967-7619">
+                              516-967-7619
                             </a>
                           </span>{" "}
                           and talk to me about how I can help you and your
@@ -140,8 +140,8 @@ export default function NursingHomeAbuse() {
                           informed at every step of your case. To speak with me,
                           call my office at{" "}
                           <span className="nap-item nap-item--phone">
-                            <a href="tel:+1-404-865-1952">
-                              404-865-1952
+                            <a href="tel:+1-516-967-7619">
+                              516-967-7619
                             </a>
                           </span>{" "}
                           or{" "}

@@ -91,8 +91,8 @@ export default function BastienVillardS() {
                           </div>
                           <div className="et_pb_module fl_people_single fl_people_single_14">
                             <div className="et_pb_module_inner">
-                              <span><a href="tel:+1-404-865-1952">
-                                (404) 865-1952
+                              <span><a href="tel:+1-516-967-7619">
+                                (516) 967-7619
                               </a></span>
                             </div>
                           </div>

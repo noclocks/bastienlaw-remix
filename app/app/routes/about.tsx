@@ -132,7 +132,7 @@ export default function About() {
                             York and New Jersey. I speak fluent English, Spanish and French. You
                             can reach my office in Atlanta by calling me at <span
                               className="nap-item nap-item--phone">
-                                <a href="tel:+1-404-865-1952">404-865-1952</a>
+                                <a href="tel:+1-516-967-7619">516-967-7619</a>
                                 </span> or <a
                                 href="../contact">
                                   emailing me

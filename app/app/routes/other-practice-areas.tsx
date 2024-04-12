@@ -70,8 +70,8 @@ export default function OtherPracticeAreas() {
                                                 potential issues.</p>
                                             <p>I serve clients across Georgia and am licensed to practice in New York
                                                 and New Jersey. You can call me directly by dialing <span
-                                                    className="nap-item nap-item--phone"><a href="tel:+1-404-865-1952"
-                                                        >404-865-1952</a></span> or you can <a
+                                                    className="nap-item nap-item--phone"><a href="tel:+1-516-967-7619"
+                                                        >516-967-7619</a></span> or you can <a
                                                     href="contact">reach me
                                                     online</a> to talk about your experiences and get solutions that
                                                 work for you.</p>
@@ -91,7 +91,7 @@ export default function OtherPracticeAreas() {
                                             <h2>You Can Trust Me To Be Your Strongest Defender</h2>
                                             <p>I am a seasoned advocate who has been through this before. I will tailor a strategic case that will give you the best opportunity for success. These can include timely filings, challenging evidence, scrutinizing procedures or fighting illegal searches. I listen with compassion - then propose a comprehensive plan to move forward.</p>
                                             <p>Do not wait. Call me now at <span className="nap-item nap-item--phone">
-                                                <a href="tel:+1-404-865-1952">404-865-1952</a>
+                                                <a href="tel:+1-516-967-7619">516-967-7619</a>
                                                 </span> for a free
                                                 consultation. I speak English, Spanish and French.
                                             </p>

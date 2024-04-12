@@ -81,8 +81,8 @@ export default function SeriousInjury() {
                       <p>Attorney Bastien will be your advocate.</p>
                       <p>
                         Do not wait. Call me now at{' '}
-                        <span className="nap-item nap-item--phone"><a href="tel:+1-404-865-1952"
-                           >404-865-1952</a></span>
+                        <span className="nap-item nap-item--phone"><a href="tel:+1-516-967-7619"
+                           >516-967-7619</a></span>
                         {' '}for a free consultation. I speak English, Spanish and French.
                       </p>
                     </div>

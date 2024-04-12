@@ -32,7 +32,7 @@ export default function Index() {
       </title>
       {/* <meta
         name="description"
-        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-865-1952."
+        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 516-967-7619."
       /> */}
       {/* <meta
         name="robots"
@@ -56,7 +56,7 @@ export default function Index() {
       /> */}
       {/* <meta
         property="og:description"
-        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-865-1952."
+        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 516-967-7619."
       /> */}
       {/* <meta property="og:url" content="https://www.bastienlaw.com/" /> */}
       {/* <meta
@@ -74,7 +74,7 @@ export default function Index() {
       /> */}
       {/* <meta
         name="twitter:description"
-        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-865-1952."
+        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 516-967-7619."
       /> */}
       {/* <meta
         name="twitter:image"
@@ -491,8 +491,8 @@ export default function Index() {
                                   protect you at every opportunity. Call my office
                                   today at{" "}
                                   <span className="nap-item nap-item--phone">
-                                    <a href="tel:+1-404-865-1952">
-                                      404-865-1952
+                                    <a href="tel:+1-516-967-7619">
+                                      516-967-7619
                                     </a>
                                   </span>
                                   {" "}to get started.
