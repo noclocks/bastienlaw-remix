@@ -859,10 +859,6 @@ a:where(:not(.wp-element-button)) {
 }
 
 @media all and (max-width:980px) {
-  #page-container {
-    padding-top: 80px
-  }
-
   .et-tb #page-container,
   .et-tb-has-header #page-container {
     padding-top: 0 !important
@@ -1917,7 +1913,6 @@ a:where(:not(.wp-element-button)) {
     width: 100%;
     visibility: visible;
     opacity: 1;
-    display: none;
     z-index: 9999;
     border-top: 3px solid #2ea3f2;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
