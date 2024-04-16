@@ -256,7 +256,7 @@ export default function HelpForm() {
         </a>{' '}
         |{' '}
         <a
-          href='/privacy-policy'
+          href='privacy'
           style={{
             // display: "block",
             // textAlign: "center",
