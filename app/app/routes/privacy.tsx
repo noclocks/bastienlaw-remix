@@ -6,10 +6,20 @@ export default function Privacy() {
   return (
     <DefaultPage
       title='Privacy Policy'
-      description='Our law firm partners with No Clocks, LLC. To learn
-                  more about the No Clocks privacy policy and the data
-                  that might be collected, please visit: Thomson Reuters
-                  Privacy Statement.'
+      description={
+        <p>
+          Our law firm partners with No Clocks, LLC. To learn more about the No
+          Clocks privacy policy and the data that might be collected, please
+          visit:{' '}
+          <a
+            href='https://github.com/noclocks'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            No Clocks GitHub
+          </a>
+        </p>
+      }
       includeSidebar={false}
     />
   );
