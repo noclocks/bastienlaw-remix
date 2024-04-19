@@ -6,20 +6,9 @@ export default function Privacy() {
   return (
     <DefaultPage
       title='Privacy Policy'
-      description={
-        <p>
-          Our law firm partners with No Clocks, LLC. To learn more about the No
-          Clocks privacy policy and the data that might be collected, please
-          visit:{' '}
-          <a
-            href='https://github.com/noclocks'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            No Clocks GitHub
-          </a>
-        </p>
-      }
+      description='Currently, our law firm&rsquo;s website does not collect any personal
+          data, unless provided by the user, such as through a contact form. This
+          policy may change in the future. If you have any questions, please contact us.'
       includeSidebar={false}
     />
   );
