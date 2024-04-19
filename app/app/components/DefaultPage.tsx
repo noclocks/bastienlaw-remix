@@ -79,7 +79,11 @@ export default function DefaultPage(props: DefaultPageProps) {
                     >
                       <div className='et_pb_module et_pb_post_content et_pb_post_content_0_tb_body'>
                         <h1>{props.title}</h1>
-                        <p>{props.description}</p>
+                        {typeof props.description === 'string' ? (
+                          <p>{props.description}</p>
+                        ) : (
+                          props.description
+                        )}
                       </div>
                     </div>
                     {!props.includeSidebar ? null : (
