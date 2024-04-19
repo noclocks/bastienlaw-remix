@@ -8,8 +8,6 @@ export default defineConfig({
   //   "assets/**",
   //   "wp-content/**",
   //   "app/wp-content/**",
-  //   "google-fonts/**",
-  //   "app/google-fonts/**",
   //   "wp-content/uploads/sites/1302270/2021/06/**",
   //   "wp-content/uploads/sites/1302270/2023/09/**",
   // ],

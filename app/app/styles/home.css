@@ -4577,7 +4577,7 @@ div.et_pb_section.et_pb_section_1_tb_body {
   background-image: linear-gradient(180deg,
       rgba(29, 51, 68, 0.68) 0%,
       rgba(29, 51, 68, 0.68) 100%),
-    url(https://www.bastienlaw.com/wp-content/uploads/sites/1302270/2021/06/banner.jpg) !important;
+      "../wp-content/uploads/sites/1302270/2021/06/banner.jpg" !important;
 }
 
 .et_pb_section_0_tb_body.et_pb_section {
@@ -4723,7 +4723,7 @@ div.et_pb_section.et_pb_section_1_tb_body {
     background-image: linear-gradient(180deg,
         rgba(29, 51, 68, 0.68) 0%,
         rgba(29, 51, 68, 0.68) 100%),
-      url(https://www.bastienlaw.com/wp-content/uploads/sites/1302270/2021/06/banner-mobile.jpg) !important;
+      "../wp-content/uploads/sites/1302270/2021/06/banner-mobile.jpg" !important;
   }
 
   .et_pb_section_0_tb_body.et_pb_section {
@@ -4753,7 +4753,7 @@ div.et_pb_section.et_pb_section_1_tb_body {
 
 div.et_pb_section.et_pb_section_0_tb_footer {
   background-blend-mode: overlay;
-  background-image: url(https://www.bastienlaw.com/wp-content/uploads/sites/1302270/2021/06/bg-short-form.jpg) !important;
+  background-image: '../wp-content/uploads/sites/1302270/2021/06/bg-short-form.jpg' !important;
 }
 
 .et_pb_section_0_tb_footer.et_pb_section {
@@ -4991,7 +4991,7 @@ body #page-container .et_pb_section .et_pb_button_1_tb_footer:hover {
 
 @media only screen and (max-width: 767px) {
   div.et_pb_section.et_pb_section_0_tb_footer {
-    background-image: url(https://www.bastienlaw.com/wp-content/uploads/sites/1302270/2023/09/bg-short-form-mob.jpg) !important;
+    background-image: '../wp-content/uploads/sites/1302270/2023/09/bg-short-form-mob.jpg' !important;
   }
 
   .et_pb_section_0_tb_footer.et_pb_section {
