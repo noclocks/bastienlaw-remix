@@ -85,10 +85,10 @@ export default function AtlantaMedicalMalpracticeLawOffice() {
                           <strong>Telephone:</strong>{' '}
                           <span className='nap-item nap-item--phone'>
                             <a
-                              href='tel:+1-516-967-7619'
+                              href='tel:+1-404-378-4344'
                               data-wpel-link='internal'
                             >
-                              516-967-7619
+                              404-378-4344
                             </a>
                           </span>
                         </p>

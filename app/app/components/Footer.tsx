@@ -90,7 +90,7 @@ export const Footer = (props: FooterProps) => {
                   <p>
                     Phone:{' '}
                     <span className='nap-item nap-item--phone'>
-                      <a href='tel:+1-516-967-7619'>516-967-7619</a>
+                      <a href='tel:+1-404-378-4344'>404-378-4344</a>
                     </span>
                     <br />
                     Fax:{' '}

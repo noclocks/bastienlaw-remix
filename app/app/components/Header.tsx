@@ -71,7 +71,7 @@ export const Header = () => {
               <div className='et_pb_module et_pb_text et_pb_text_1_tb_header fl-darklinks fl-cta fl-margin-bottom  et_pb_text_align_right et_pb_text_align_center-tablet et_pb_bg_layout_light'>
                 <div className='et_pb_text_inner'>
                   <span className='nap-item nap-item--phone'>
-                    <a href='tel:+1-516-967-7619'>516-967-7619</a>
+                    <a href='tel:+1-404-378-4344'>404-378-4344</a>
                   </span>
                 </div>
               </div>
@@ -412,7 +412,7 @@ export const Header = () => {
                 <div className='et_pb_text_inner'>
                   <span className='et-pb-icon fl-phone-icon'></span>{' '}
                   <span className='nap-item nap-item--phone'>
-                    <a href='tel:+1-516-967-7619'>Call</a>
+                    <a href='tel:+1-404-378-4344'>Call</a>
                   </span>
                 </div>
               </div>
