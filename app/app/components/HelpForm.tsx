@@ -1,32 +1,4 @@
-import {
-  // useRemixForm,
-  // getValidatedFormData
-} from "remix-hook-form";
 import {Form} from "@remix-run/react";
-// import {zodResolver} from "@hookform/resolvers/zod";
-// import {
-//   json,
-//   // redirect
-// } from "@remix-run/node";
-// import type {ActionFunctionArgs} from "@remix-run/node";
-// import {z} from "zod";
-
-// import process from "util";
-// process.env.NODE_ENV = "development";
-
-// const schema = z.object({
-//   // Add your schema here
-//   name: z.string(),
-//   email: z.string().email().min(1),
-//   // TODO: Phone input mask
-//   phone: z.string(),
-//   message: z.string(),
-//   checkbox: z.boolean(),
-// });
-
-// type FormData = z.infer<typeof schema>;
-
-// const resolver = zodResolver(schema);
 
 // export const action = async ({request}: ActionFunctionArgs) => {
 //   const {errors, data, receivedValues: defaultValues} =
@@ -38,33 +10,17 @@ import {Form} from "@remix-run/react";
 //   return json(data);
 // };
 
-// import {useRef} from "react";
 import {init, sendForm} from "@emailjs/browser";
 import {useMemo, useState} from "react";
 
 export default function HelpForm() {
-  // const {
-  //   handleSubmit,
-  // } = useRemixForm({
-  //   mode: "onSubmit",
-  //   defaultValues: {
-  //     name: "",
-  //     email: "",
-  //     phone: "",
-  //     message: "",
-  //     checkbox: false,
-  //   },
-  //   resolver: async (data) => {
-  //     return {
-  //       values: data,
-  //       errors: {},
-  //     };
-  //   },
-  //   // resolver,
-  // });
 
   const emailjsInit = () => {
     (function () {
+      // console.log('emailjsInit called');
+      // console.log('ENV: ', process.env);
+      // console.log('ENV: ', import.meta.env);
+
       // https://dashboard.emailjs.com/admin/account
       init({
         // TODO: Move to .env
@@ -82,7 +38,7 @@ export default function HelpForm() {
 
   const handleCheckbox = () => {
     // const handleCheckbox = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log('checkbox clicked', !checkbox);
+    // console.log('checkbox clicked', !checkbox);
     // event.preventDefault();
     setCheckbox(!checkbox);
   };
@@ -96,13 +52,22 @@ export default function HelpForm() {
 
     console.log('event.target: ', event.target);
     // these IDs from the previous steps
-    sendForm('service_fusm6zb', 'template_cwlo89s', event.target as HTMLFormElement)
+    // sendForm('service_fusm6zb', 'template_cwlo89s', event.target as HTMLFormElement)
+    sendForm(
+      'service_fusm6zb',
+      'template_cwlo89s',
+      // event.target as HTMLFormElement
+      '#contact-form'
+    )
       // emailjs.sendForm('contact_service', 'contact_form', this)
-      .then(() => {
-        console.log('SUCCESS!');
-      }, (error) => {
-        console.log('FAILED...', error);
-      });
+      .then(
+        (response) => {
+          // console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          // console.log('FAILED...', error);
+        }
+      );
   }
 
   // window.onload = function() {
