@@ -1,4 +1,3 @@
-import type {MetaFunction} from "@remix-run/node";
 import {Header} from "../components/Header";
 import {Footer} from "../components/Footer";
 
@@ -16,20 +15,13 @@ import VillardImg from "../wp-content/uploads/sites/1302270/2022/06/Villard-S-Ba
 // Styles
 import "../styles/home.css";
 
-export const meta: MetaFunction = () => {
-  return [
-    {title: "Bastien Law"},
-    {name: "description", content: "Welcome to Remix (SPA Mode)!"},
-  ];
-};
-
 export default function Index() {
   return (
     <>
-      <title>
+      {/* <title>
         Nursing Home Abuse Attorney | Law Offices of Villard Bastien, LLC |
         Medical Malpractice
-      </title>
+      </title> */}
       {/* <meta
         name="description"
         content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-378-4344."

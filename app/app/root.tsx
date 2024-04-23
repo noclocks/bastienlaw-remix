@@ -12,7 +12,13 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 // import "./styles/dsethtml.css"
 // import "./styles/dsethtml2.css"
 
-import ChatbotScript from "./components/ChatBot";
+
+export const meta: MetaFunction = () => {
+  return [
+    {title: "Bastien Law"},
+    {name: "description", content: "Law Offices of Villard Bastien"},
+  ];
+};
 
 export function Layout({children}: {children: React.ReactNode}) {
   return (

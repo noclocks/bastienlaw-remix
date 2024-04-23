@@ -1,6 +1,5 @@
 import {MouseEvent} from "react";
-import type {LinksFunction} from "@remix-run/node";
-import {MetaFunction, isRouteErrorResponse, useRouteError} from "@remix-run/react";
+import {isRouteErrorResponse, useRouteError} from "@remix-run/react";
 
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
@@ -10,16 +9,6 @@ import BastienVillardSImage from "../wp-content/uploads/sites/1302270/2022/06/ba
 
 // Styles
 import "../styles/bastein-villard-s.css";
-
-export const links: LinksFunction = () => (
-  [
-    // your links here
-  ]
-);
-
-export const meta: MetaFunction = () => [
-  // your meta here
-];
 
 export default function BastienVillardS() {
   const handleEmailMeClick = (e: MouseEvent): void => {
