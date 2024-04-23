@@ -67,12 +67,14 @@ export default function HelpForm() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    console.log('event.target: ', event.target);
-    // these IDs from the previous steps
-    // sendForm('service_fusm6zb', 'template_cwlo89s', event.target as HTMLFormElement)
+    if (!import.meta.env.PROD) {
+      console.log('DEV MODE: Form submitted.');
+    }
+
     sendForm(
       'service_fusm6zb',
-      'template_cwlo89s',
+      import.meta.env.PROD ? 'template_cwlo89s' : 'template_cxz8obc',
+      // 'template_cwlo89s',
       // event.target as HTMLFormElement
       '#contact-form'
     )
@@ -85,7 +87,7 @@ export default function HelpForm() {
         (error) => {
           // console.log('FAILED...', error);
           notify({type: 'error'});
-  }
+        }
       )
       .finally(() => {
         // Clear the form fields
