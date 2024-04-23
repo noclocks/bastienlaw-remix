@@ -1,4 +1,9 @@
-import {Form} from "@remix-run/react";
+import {useMemo, useState} from 'react';
+import {init, sendForm} from '@emailjs/browser';
+import {Form} from '@remix-run/react';
+import {ToastContainer, toast} from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.min.css';
 
 // export const action = async ({request}: ActionFunctionArgs) => {
 //   const {errors, data, receivedValues: defaultValues} =
@@ -10,11 +15,23 @@ import {Form} from "@remix-run/react";
 //   return json(data);
 // };
 
-import {init, sendForm} from "@emailjs/browser";
-import {useMemo, useState} from "react";
+const notify = ({type = 'success' || 'error'}) =>
+  toast(
+    type === 'success'
+      ? 'Thank you for contacting us!'
+      : 'There was an error sending your message. Please try again.',
+    {
+      // autoClose: false,
+      autoClose: 5000,
+      position: 'top-center',
+      toastId: 'contact-form-toast',
+      style: {
+        zIndex: 99999,
+      },
+    }
+  );
 
 export default function HelpForm() {
-
   const emailjsInit = () => {
     (function () {
       // console.log('emailjsInit called');
@@ -24,13 +41,13 @@ export default function HelpForm() {
       // https://dashboard.emailjs.com/admin/account
       init({
         // TODO: Move to .env
-        publicKey: "q6lPxbUCHveROr8LO",
+        publicKey: 'q6lPxbUCHveROr8LO',
       });
     })();
   };
 
   const [checkbox, setCheckbox] = useState(false);
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState('');
 
   const handleEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
@@ -45,7 +62,7 @@ export default function HelpForm() {
 
   const isButtonDisabled = useMemo(() => {
     return !checkbox || email.length === 0;
-  }, [email, checkbox])
+  }, [email, checkbox]);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -63,12 +80,18 @@ export default function HelpForm() {
       .then(
         (response) => {
           // console.log('SUCCESS!', response.status, response.text);
+          notify({type: 'success'});
         },
         (error) => {
           // console.log('FAILED...', error);
-        }
-      );
+          notify({type: 'error'});
   }
+      )
+      .finally(() => {
+        // Clear the form fields
+        (event.target as HTMLFormElement).reset();
+      });
+  };
 
   // window.onload = function() {
   //   document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -134,7 +157,8 @@ export default function HelpForm() {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'space-between',
-          }}>
+          }}
+        >
           <label
             style={{
               display: 'flex',
@@ -142,7 +166,8 @@ export default function HelpForm() {
               justifyContent: 'space-between',
               fontWeight: 'bold',
               width: '30%',
-            }}>
+            }}
+          >
             Name
             <input
               id='email-me-name'
@@ -150,7 +175,8 @@ export default function HelpForm() {
               name='name'
               style={{
                 padding: '12px',
-              }}/>
+              }}
+            />
           </label>
           <label
             style={{
@@ -159,7 +185,8 @@ export default function HelpForm() {
               justifyContent: 'space-between',
               fontWeight: 'bold',
               width: '30%',
-            }}>
+            }}
+          >
             Email *
             <input
               type='email'
@@ -168,7 +195,8 @@ export default function HelpForm() {
               value={email}
               style={{
                 padding: '12px',
-              }}/>
+              }}
+            />
           </label>
           <label
             style={{
@@ -177,7 +205,8 @@ export default function HelpForm() {
               justifyContent: 'space-between',
               fontWeight: 'bold',
               width: '30%',
-            }}>
+            }}
+          >
             Phone
             <input
               type='tel'
@@ -186,7 +215,8 @@ export default function HelpForm() {
               // height={50}
               style={{
                 padding: '12px',
-              }}/>
+              }}
+            />
           </label>
         </div>
         <br />
@@ -198,14 +228,16 @@ export default function HelpForm() {
               justifyContent: 'space-between',
               fontWeight: 'bold',
               width: '100%',
-            }}>
+            }}
+          >
             Message
             <textarea
               name='message'
               rows={5}
               style={{
                 padding: '12px',
-              }}/>
+              }}
+            />
           </label>
         </div>
         <br />
@@ -216,7 +248,8 @@ export default function HelpForm() {
             // textAlign: "center",
             textDecoration: 'underline',
             color: '#3975ac',
-          }}>
+          }}
+        >
           Disclaimer
         </a>{' '}
         |{' '}
@@ -227,7 +260,8 @@ export default function HelpForm() {
             // textAlign: "center",
             textDecoration: 'underline',
             color: '#3975ac',
-          }}>
+          }}
+        >
           Privacy Policy
         </a>
         <br />
@@ -236,7 +270,8 @@ export default function HelpForm() {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
-          }}>
+          }}
+        >
           {/* <Form itemType="checkbox" /> */}
           <input
             type='checkbox'
@@ -254,18 +289,26 @@ export default function HelpForm() {
               padding: '12px',
               height: '20px',
               width: '20px',
-            }}/>
+            }}
+          />
           <h4
             style={{
               fontWeight: 'bold',
               marginLeft: '10px',
               paddingTop: '0',
-            }}>
+            }}
+          >
             I Have Read The Disclaimer *
           </h4>
         </span>
         <br />
         <div
+          // onMouseOver={(e: MouseEvent) => {
+          //   e.preventDefault();
+          //   isButtonDisabled ? toast('Please check the disclaimer.') : null;
+          //   console.log('onMouseOver');
+          // }}
+          // onFocus={() => {}}
           style={{
             display: 'flex',
             flexDirection: 'row',
@@ -292,11 +335,18 @@ export default function HelpForm() {
               width: '270px',
               letterSpacing: '1.5px',
               border: '1px solid #fff',
-            }}>
+            }}
+          >
             Contact Me Online
           </button>
         </div>
       </Form>
+      <ToastContainer
+        position='top-center'
+        style={{
+          zIndex: 99999,
+        }}
+      />
     </>
   );
 }
