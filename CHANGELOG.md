@@ -12,6 +12,7 @@
 
 ## Features
 
+- Added demonstration chatbot embed (script) ([5184e0f](https://github.com/noclocks/bastienlaw-remix/commit/5184e0fc55c0f870fee846c578ea184248bbd564))  - (Jimmy Briggs)
 - Re-structure font assets and styles ([e7825dd](https://github.com/noclocks/bastienlaw-remix/commit/e7825dd7595d2bfa7e08fed08bdb97b1ce3a17c2))  - (Jimmy Briggs)
 - Re-structure font assets and styles ([d528e56](https://github.com/noclocks/bastienlaw-remix/commit/d528e563ec63c33fb4afacda02876b9cfb469230))  - (Jimmy Briggs)
 
