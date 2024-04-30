@@ -1,0 +1,27 @@
+/* global.css */
+
+/* Font */
+body,
+input,
+textarea,
+select {
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", Helvetica, Arial, Lucida, sans-serif;
+}
+
+.et_pb_text_1_tb_header a {
+  font-family: 'Josefin Sans', Helvetica, Arial, Lucida, sans-serif
+}
+
+/* Mobile */
+.mobile_nav.closed .et_mobile_menu {
+  display: none
+}

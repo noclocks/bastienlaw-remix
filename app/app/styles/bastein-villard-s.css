@@ -671,7 +671,7 @@ a:where(:not(.wp-element-button)) {
   }
 
   body {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     color: #666;
     background-color: #fff;
@@ -717,7 +717,7 @@ a:where(:not(.wp-element-button)) {
 
   code,
   pre {
-    font-family: Courier New, monospace;
+    font-family: 'Courier New', monospace;
     margin-bottom: 10px
   }
 
@@ -855,10 +855,6 @@ a:where(:not(.wp-element-button)) {
 }
 
 @media all and (max-width:980px) {
-  #page-container {
-    padding-top: 80px
-  }
-
   .et-tb #page-container,
   .et-tb-has-header #page-container {
     padding-top: 0 !important
@@ -888,7 +884,6 @@ a:where(:not(.wp-element-button)) {
     box-sizing: border-box
   }
 
-  #et-info-email:before,
   #et-info-phone:before,
   #et_search_icon:before,
   .comment-reply-link:after,
@@ -910,10 +905,10 @@ a:where(:not(.wp-element-button)) {
   .et_pb_testimonial:before,
   .et_pb_toggle_title:before,
   .form-submit .et_pb_button:after,
-  .mobile_menu_bar:before,
+  /* .mobile_menu_bar:before, */
   a.et_pb_more_button:after {
     font-family: ETmodules !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     -webkit-font-feature-settings: normal;
@@ -1192,9 +1187,9 @@ a:where(:not(.wp-element-button)) {
     word-wrap: break-word
   }
 
-  .et_pb_post .entry-content {
+  /* .et_pb_post .entry-content {
     padding-top: 30px
-  }
+  } */
 }
 
 @media all and (min-width:981px) and (max-width:1100px) {
@@ -1851,22 +1846,6 @@ a:where(:not(.wp-element-button)) {
     top: 6px
   }
 
-  .et_mobile_menu {
-    position: absolute;
-    left: 0;
-    padding: 5%;
-    background: #fff;
-    width: 100%;
-    visibility: visible;
-    opacity: 1;
-    display: none;
-    z-index: 9999;
-    border-top: 3px solid #2ea3f2;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .1)
-  }
-
   .et_mobile_menu li a {
     border-bottom: 1px solid rgba(0, 0, 0, .03);
     color: #666;
@@ -2173,22 +2152,6 @@ h6 {
   .et_pb_column .et_pb_row_inner {
     padding: 0px 0
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Josefin Sans', Helvetica, Arial, Lucida, sans-serif
-}
-
-body,
-input,
-textarea,
-select {
-  font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif
 }
 
 .et_pb_row,
@@ -2557,10 +2520,6 @@ select {
 
 .et_pb_text_1_tb_header.et_pb_text a:hover {
   color: #003366 !important
-}
-
-.et_pb_text_1_tb_header a {
-  font-family: 'Josefin Sans', Helvetica, Arial, Lucida, sans-serif
 }
 
 .et_pb_menu_0_tb_header.et_pb_menu ul li a {

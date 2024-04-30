@@ -1,14 +1,9 @@
-import type {MetaFunction} from "@remix-run/node";
 import {Header} from "../components/Header";
 import {Footer} from "../components/Footer";
 
 // ASSETS //
 // Fonts
 import "../styles/typography.css"
-// import "../google-fonts/google-fonts.css"
-// import "../google-fonts/css-1"
-// import "../google-fonts/css-2"
-// import "../google-fonts/css-3"
 
 // Images
 import Icon1 from "../wp-content/uploads/sites/1302270/2021/06/icon1.png"
@@ -18,42 +13,18 @@ import NursingHomeImg from "../wp-content/uploads/sites/1302270/2021/06/nursing.
 import VillardImg from "../wp-content/uploads/sites/1302270/2022/06/Villard-S-Bastein.jpg"
 
 // Styles
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb01971f6d6ca0432cdb0afa00588fa621b5cb7.css"
-import "../wp-content/index_files/cc40ba9a93e87e26f1018e89bcb019711766ec8043887571a4c9e737f74cf36c.css"
-import "../styles/mobilenav.css"
-import "../styles/dsethtml.css"
-import "../styles/dsethtml2.css"
-// import "../styles/home.css";
-export const meta: MetaFunction = () => {
-  return [
-    {title: "Bastien Law"},
-    {name: "description", content: "Welcome to Remix (SPA Mode)!"},
-  ];
-};
+import "../styles/home.css";
 
 export default function Index() {
   return (
     <>
-      {/* <style
-        id="divi-style-parent-css"
-        dangerouslySetInnerHTML={{__html: ""}}
-      /> */}
-      {/* <link
-        rel="stylesheet"
-        // id="divi-style-css"
-        // href="styles/home.css"
-        // href={HomeStyle}
-      /> */}
-      {/* <meta charSet="UTF-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <link rel="pingback" href="https://www.bastienlaw.com/xmlrpc.php" /> */}
-      <title>
+      {/* <title>
         Nursing Home Abuse Attorney | Law Offices of Villard Bastien, LLC |
         Medical Malpractice
-      </title>
+      </title> */}
       {/* <meta
         name="description"
-        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-865-1952."
+        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-378-4344."
       /> */}
       {/* <meta
         name="robots"
@@ -77,7 +48,7 @@ export default function Index() {
       /> */}
       {/* <meta
         property="og:description"
-        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-865-1952."
+        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-378-4344."
       /> */}
       {/* <meta property="og:url" content="https://www.bastienlaw.com/" /> */}
       {/* <meta
@@ -95,7 +66,7 @@ export default function Index() {
       /> */}
       {/* <meta
         name="twitter:description"
-        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-865-1952."
+        content="Contact the Law Offices of Villard Bastien, LLC, in Atlanta if you or a loved one has suffered a personal injury or nursing home abuse. Call 404-378-4344."
       /> */}
       {/* <meta
         name="twitter:image"
@@ -105,14 +76,13 @@ export default function Index() {
         rel="alternate"
         type="application/rss+xml"
         title="Law Offices of Villard Bastien, LLC » Feed"
-        href="feed/index.htm"
+        href="feed"
       /> */}
       {/* <meta content="Divi Child v.3.19.18" name="generator" /> */}
       {/* <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=2.0"
       /> */}
-      {/* <link rel="https://api.w.org/" href="wp-json/index.htm" /> */}
       {/* <link
         rel="alternate"
         type="application/json"
@@ -239,14 +209,15 @@ export default function Index() {
                                   <span className="nap-item nap-item--name">
                                     Law Offices of Villard Bastien, LLC
                                   </span>
-                                  , I will be your champion.
+                                  <br/>
+                                  I will be your champion.
                                 </p>
                               </div>
                             </div>
                             <div className="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_button_alignment_tablet_center et_pb_module ">
                               <a
                                 className="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
-                                href="/contact"
+                                href="contact"
                               >
                                 Contact Today
                               </a>
@@ -356,7 +327,7 @@ export default function Index() {
                             </div>
                           </div>
                           <div className="et_pb_column et_pb_column_1_3 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
-                            <a href="other-practice-areas/index.htm">
+                            <a href="other-practice-areas">
                               <div className="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_1 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
                                 <div className="et_pb_module_inner">
                                   <div
@@ -436,7 +407,7 @@ export default function Index() {
                                       <img
                                         decoding="async"
                                         src={VillardImg}
-                                        alt="Villard S. Bastein"
+                                        alt="Villard S. Bastien"
                                         className="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"
                                         width={267}
                                         height={267}
@@ -447,7 +418,7 @@ export default function Index() {
                                 </div>
                                 <div className="et_pb_blurb_container">
                                   <div className="et_pb_blurb_description">
-                                    <p>Villard S. Bastein</p>
+                                    <p>Villard S. Bastien</p>
                                   </div>
                                 </div>
                               </div>
@@ -513,8 +484,8 @@ export default function Index() {
                                   protect you at every opportunity. Call my office
                                   today at{" "}
                                   <span className="nap-item nap-item--phone">
-                                    <a href="tel:+1-404-865-1952">
-                                      404-865-1952
+                                    <a href="tel:+1-404-378-4344">
+                                      404-378-4344
                                     </a>
                                   </span>
                                   {" "}to get started.
