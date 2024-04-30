@@ -1,4 +1,4 @@
-# Law Offices of Villard Bastien Website
+# Law Offices of Villard Bastien Website - Remix
 
 > [!NOTE]
 > Bastien Law website (clone) built with Remix (+ Vite for SPA mode)
