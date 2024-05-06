@@ -33,7 +33,7 @@ export function Layout({children}: {children: React.ReactNode}) {
         {[children, <ScrollToTopButton key={0} />]}
         <ScrollRestoration />
         <Scripts />
-        <ChatbotScript />
+        {/* <ChatbotScript /> */}
       </body>
     </html>
   );
