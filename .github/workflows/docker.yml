@@ -1,0 +1,30 @@
+name: Docker
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    # - name: Build the Docker image
+    #   run: docker build . --file app/Dockerfile --tag ghcr.io/noclocks/bastienlaw-remix:$(date +%s)
+    - name: Publish to Registry
+      uses: elgohr/Publish-Docker-Github-Action@v5
+      with:
+        name: noclocks/client-bastienlaw/bastienlaw.com
+        username: noclocks # ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        registry: ghcr.io
+        default_branch: main
+        workdir: app
+        tags: ${{ github.ref_name }}
+        tag_semver: true
