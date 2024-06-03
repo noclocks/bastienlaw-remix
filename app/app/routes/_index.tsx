@@ -1,6 +1,8 @@
 import {Header} from "../components/Header";
 import {Footer} from "../components/Footer";
 
+import YouTubeEmbed from "../components/YouTubeEmbed";
+
 // ASSETS //
 // Fonts
 import "../styles/typography.css"
@@ -14,6 +16,9 @@ import VillardImg from "../wp-content/uploads/sites/1302270/2022/06/Villard-S-Ba
 
 // Styles
 import "../styles/home.css";
+
+const YoutubeVideoId = "fdi_z9NLT_w?si=iSeO4L8snTfPbG5H";
+const YouTubeVideoTitle = "Villard Bastien"
 
 export default function Index() {
   return (
@@ -239,6 +244,10 @@ export default function Index() {
                           </div>
                         </div>
                       </div>
+                      <YouTubeEmbed
+                        videoId={YoutubeVideoId}
+                        title={YouTubeVideoTitle}
+                      />
                       <div className="et_pb_section et_pb_section_2 content-section fl-home-sec-4 et_pb_with_background et_section_regular">
                         <div className="et_pb_row et_pb_row_2">
                           <div className="et_pb_column et_pb_column_1_2 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
