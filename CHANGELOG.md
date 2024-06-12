@@ -8,6 +8,7 @@
 
 ## Bug Fixes
 
+- Fix docker.yml GHA to not run on PRs ([601acf2](https://github.com/noclocks/bastienlaw-remix/commit/601acf2ce40610bb0d4dd29d3d17a1806a18ebf5))  - (Jimmy Briggs)
 - Fix changelog.yml workflow for PRs ([719ef3f](https://github.com/noclocks/bastienlaw-remix/commit/719ef3fb364f65271adcf438bd4ed271ae5b08f7))  - (Jimmy Briggs)
 
 ## Features
