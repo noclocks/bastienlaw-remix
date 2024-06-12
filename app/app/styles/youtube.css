@@ -1,11 +1,12 @@
 .youtube-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
     background-color: #f0f0f0;
+    height: 50vw;
 }
 
 iframe {
     border: 2px solid #000;
     border-radius: 8px;
+    height: inherit;
+    scale: 0.9;
+    width: 100%;
 }
