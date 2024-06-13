@@ -6,6 +6,13 @@ This template leverages [Remix SPA Mode](https://remix.run/docs/en/main/future/s
 
 📖 See the [Remix Vite docs][remix-vite-docs] for details on supported features.
 
+## Docker
+
+```shell
+docker buildx build . -t bastienlaw:latest
+docker run -d -p 8080 bastienlaw:latest
+```
+
 ## Setup
 
 ```shellscript

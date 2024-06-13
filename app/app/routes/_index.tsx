@@ -2,6 +2,7 @@ import {Header} from "../components/Header";
 import {Footer} from "../components/Footer";
 
 import YouTubeEmbed from "../components/YouTubeEmbed";
+import { appConfig } from "../config/constants";
 
 // ASSETS //
 // Fonts
@@ -17,8 +18,8 @@ import VillardImg from "../wp-content/uploads/sites/1302270/2022/06/Villard-S-Ba
 // Styles
 import "../styles/home.css";
 
-const YoutubeVideoId = "fdi_z9NLT_w?si=iSeO4L8snTfPbG5H";
-const YouTubeVideoTitle = "Villard Bastien"
+const YoutubeVideoId = appConfig.youtube_video_id;
+const YouTubeVideoTitle = appConfig.youtube_video_title;
 
 export default function Index() {
   return (
