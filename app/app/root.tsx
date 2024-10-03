@@ -24,8 +24,8 @@ import ChatbotScript from "./components/ChatBot";
 
 export const meta: MetaFunction = () => {
   return [
-    {title: "Bastien Law"},
-    {name: "description", content: "Law Offices of Villard Bastien"},
+    { title: "Bastien Law" },
+    { name: "description", content: "Law Offices of Villard Bastien" },
   ];
 };
 
@@ -95,7 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {[children, <ScrollToTopButton key={0} />]}
         <ScrollRestoration />
         <Scripts />
-        <ChatbotScript />
+        {/* <ChatbotScript /> */}
       </body>
     </html>
   );
@@ -104,4 +104,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 export default function App() {
   return <Outlet />;
 }
-
