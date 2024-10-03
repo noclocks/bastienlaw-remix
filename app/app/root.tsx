@@ -22,11 +22,6 @@ import './styles/global.css';
 import ScrollToTopButton from "./components/ScrollToTopButton";
 // import ChatbotScript from "./components/ChatBot";
 
-// Load the GA tracking id from the .env
-export const loader = async () => {
-  return json({ gaTrackingId: "G-BQBBSBFGZG" });
-};
-
 export const meta: MetaFunction = () => {
   return [
     {title: "Bastien Law"},
@@ -89,6 +84,3 @@ export default function App() {
   return <Outlet />;
 }
 
-export function HydrateFallback() {
-  return <p>Loading...</p>;
-}

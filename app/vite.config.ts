@@ -1,5 +1,4 @@
 import {vitePlugin as remix} from '@remix-run/dev';
-import {remixDevTools} from 'remix-development-tools';
 import {defineConfig} from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
@@ -14,9 +13,6 @@ export default defineConfig({
         v3_throwAbortReason: true,
       },
     }),
-    remixDevTools({
-      includeInProd: false,
-    }),
     tsconfigPaths(),
   ],
   server: {
@@ -24,7 +20,7 @@ export default defineConfig({
     port: 8080,
     strictPort: true,
     host: "0.0.0.0",
-    origin: "http://0.0.0.0:3000",
+    origin: "http://0.0.0.0:8080",
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
