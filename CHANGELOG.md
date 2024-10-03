@@ -21,6 +21,7 @@
 
 ## Features
 
+- Fix Dockerfile ([71b4802](https://github.com/noclocks/bastienlaw-remix/commit/71b4802c66217737e46ebc16caae30d58853c258))  - (Jimmy Briggs)
 - Add gtags support ([83da898](https://github.com/noclocks/bastienlaw-remix/commit/83da898f031ea80a3afcccd2e667134e8095201f))  - (Jimmy Briggs)
 - Add GHA cloudrun.yml ([361b43d](https://github.com/noclocks/bastienlaw-remix/commit/361b43daed4168a5f1b46234c0cf5add83faaca9))  - (Jimmy Briggs)
 - Add scaffolding for new YouTubeEmbed component ([d203b6c](https://github.com/noclocks/bastienlaw-remix/commit/d203b6cb7d0d903b617fd57a53f6de1a2d50ee8a))  - (Jimmy Briggs)
