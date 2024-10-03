@@ -11,8 +11,18 @@
 - Fix docker.yml GHA to not run on PRs ([601acf2](https://github.com/noclocks/bastienlaw-remix/commit/601acf2ce40610bb0d4dd29d3d17a1806a18ebf5))  - (Jimmy Briggs)
 - Fix changelog.yml workflow for PRs ([719ef3f](https://github.com/noclocks/bastienlaw-remix/commit/719ef3fb364f65271adcf438bd4ed271ae5b08f7))  - (Jimmy Briggs)
 
+## Configuration
+
+- Abstract out application configuration constants ([f84f2c6](https://github.com/noclocks/bastienlaw-remix/commit/f84f2c6c0fcf0391ef8cb11c8de061cf90163aca))  - (Jimmy Briggs)
+
+## Documentation
+
+- Add Docker section to app README ([2292a46](https://github.com/noclocks/bastienlaw-remix/commit/2292a46404cfcf7412d63cac0a8fe996637830f8))  - (Jimmy Briggs)
+
 ## Features
 
+- Add gtags support ([83da898](https://github.com/noclocks/bastienlaw-remix/commit/83da898f031ea80a3afcccd2e667134e8095201f))  - (Jimmy Briggs)
+- Add GHA cloudrun.yml ([361b43d](https://github.com/noclocks/bastienlaw-remix/commit/361b43daed4168a5f1b46234c0cf5add83faaca9))  - (Jimmy Briggs)
 - Add scaffolding for new YouTubeEmbed component ([d203b6c](https://github.com/noclocks/bastienlaw-remix/commit/d203b6cb7d0d903b617fd57a53f6de1a2d50ee8a))  - (Jimmy Briggs)
 - Add initial GHA workflow for Docker (docker.yml) ([32bc19d](https://github.com/noclocks/bastienlaw-remix/commit/32bc19dc8db2aec0bff7583bd851069b69576b32))  - (Jimmy Briggs)
 - Added demonstration chatbot embed (script) ([5184e0f](https://github.com/noclocks/bastienlaw-remix/commit/5184e0fc55c0f870fee846c578ea184248bbd564))  - (Jimmy Briggs)
