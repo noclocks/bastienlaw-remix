@@ -21,6 +21,9 @@
 
 ## Features
 
+- Update pnpm / npm setup ([5e28816](https://github.com/noclocks/bastienlaw-remix/commit/5e2881628aec71126b3603bae256e3caa61c83e4))  - (Jimmy Briggs)
+- Update Dockerfile and add new server.js setup ([2933257](https://github.com/noclocks/bastienlaw-remix/commit/293325748d1b80a469faaabe803c9e07fd75a992))  - (Jimmy Briggs)
+- Add scripts ([5915b82](https://github.com/noclocks/bastienlaw-remix/commit/5915b82379d0fb4db56a44ab7381360472927c87))  - (Jimmy Briggs)
 - Fix Dockerfile ([71b4802](https://github.com/noclocks/bastienlaw-remix/commit/71b4802c66217737e46ebc16caae30d58853c258))  - (Jimmy Briggs)
 - Add gtags support ([83da898](https://github.com/noclocks/bastienlaw-remix/commit/83da898f031ea80a3afcccd2e667134e8095201f))  - (Jimmy Briggs)
 - Add GHA cloudrun.yml ([361b43d](https://github.com/noclocks/bastienlaw-remix/commit/361b43daed4168a5f1b46234c0cf5add83faaca9))  - (Jimmy Briggs)
