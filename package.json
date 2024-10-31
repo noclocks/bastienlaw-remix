@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "pnpm dlx only-allow pnpm",
     "build": "remix vite:build",
-    "dev": "remix vite:dev --port 8080",
+    "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "preview": "pnpm dlx vite preview",
     "serve": "node server.js",
