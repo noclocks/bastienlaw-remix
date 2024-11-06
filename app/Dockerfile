@@ -9,6 +9,8 @@ ARG PNPM_VERSION=9.7.0
 # Use node image for base image for all stages.
 FROM node:${NODE_VERSION}-alpine AS base
 
+ENV DOCKER_BUILDKIT=1
+
 # Associate with GitHub repository
 LABEL org.opencontainers.image.source=https://github.com/noclocks/bastienlaw-remix
 
