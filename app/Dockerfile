@@ -1,8 +1,12 @@
-ARG NODE_VERSION=18
-ARG PNPM_VERSION=9.0.5
+# syntax=docker/dockerfile:1
+
+# ENV COREPACK_ENABLE_STRICT=0
+
+ARG NODE_VERSION=20.11.0
+ARG PNPM_VERSION=9.7.0
 
 ################################################################################
-# Base stage for shared node/pnpm setup
+# Use node image for base image for all stages.
 FROM node:${NODE_VERSION}-alpine AS base
 
 # Associate with GitHub repository
@@ -16,67 +20,61 @@ RUN --mount=type=cache,target=/root/.npm \
     npm install -g pnpm@${PNPM_VERSION}
 
 ################################################################################
-# Dependencies stage - install all dependencies
+# Create a stage for installing production dependecies.
 FROM base AS deps
 
-# Copy package files
-COPY package.json pnpm-lock.yaml ./
-
-# Install dependencies with a more flexible approach
-RUN --mount=type=cache,target=/root/.local/share/pnpm/store \
-    pnpm install --prod
-
-################################################################################
-# Builder stage - build the application
-FROM base AS builder
-
-# Copy package files
-COPY package.json pnpm-lock.yaml ./
-
-# Install all dependencies (including dev deps)
-RUN --mount=type=cache,target=/root/.local/share/pnpm/store \
+# Download dependencies AS a separate step to take advantage of Docker's caching.
+# Leverage a cache mount to /root/.local/share/pnpm/store to speed up subsequent builds.
+# Leverage bind mounts to package.json and pnpm-lock.yaml to avoid having to copy them
+# into this layer.
+RUN --mount=type=bind,source=package.json,target=package.json \
+    --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
+    --mount=type=cache,target=/root/.local/share/pnpm/store \
     pnpm install
 
-# Copy source code
-COPY . .
+################################################################################
+# Create a stage for building the application.
+FROM deps AS build
 
-# Build the application
+# Download additional development dependencies before building, AS some projects require
+# "devDependencies" to be installed to build. If you don't need this, remove this step.
+RUN --mount=type=bind,source=package.json,target=package.json \
+    --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
+    --mount=type=cache,target=/root/.local/share/pnpm/store \
+    pnpm install --frozen-lockfile
+
+# Copy the rest of the source files into the image.
+COPY . .
+# Run the build script.
 RUN pnpm run build
 
-# List build output for debugging
-RUN echo "Build directory structure:" && \
-    find build -type f
-
 ################################################################################
-# Runner stage - final production image
-FROM node:${NODE_VERSION}-alpine AS runner
+# Create a new stage to run the application with minimal runtime dependencies
+# where the necessary files are copied from the build stage.
+FROM base AS final
 
-# Use production node environment
+# Use production node environment by default.
 ENV NODE_ENV=production
-ENV HOST=0.0.0.0
-ENV PORT=3000
+# ENV NODE_ENV=development
 
-WORKDIR /usr/src/app
-
-# Install only the packages needed to run the server
-COPY package.json pnpm-lock.yaml ./
-RUN npm install --global pnpm@${PNPM_VERSION} && \
-    pnpm install --prod
-
-# Copy server.js and the build directory
-COPY server.js ./
-COPY --from=builder /usr/src/app/build ./build
-COPY --from=builder /usr/src/app/public ./public
-
-# List directories for debugging
-RUN echo "Final build structure:" && \
-    find . -type f
-
-# Run the application as a non-root user.
+# # Run the application AS a non-root user.
 USER node
 
-# Expose the port that the application listens on.
-EXPOSE 3000
+# Copy package.json so that package manager commands can be used.
+COPY package.json .
 
-# Run the application using the express server
-CMD ["node", "server.js"]
+# Copy the production dependencies from the deps stage and also
+# the built application from the build stage into the image.
+COPY --from=deps /usr/src/app/node_modules ./node_modules
+COPY --from=build /usr/src/app/build ./build
+
+ENV HOST='0.0.0.0'
+# ENV PORT=8080
+# ARG PORT=8080
+# ENV PORT=${PORT}
+
+# Expose the port that the application listens on.
+EXPOSE 8080
+
+# Run the application.
+CMD ["pnpm", "run", "serve"]
