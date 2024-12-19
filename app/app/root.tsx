@@ -63,6 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <body>
         <noscript>
           <iframe
+            title="Google Tag Manager"
             src="https://www.googletagmanager.com/ns.html?id=GTM-K6DB8PVD"
             height="0"
             width="0"

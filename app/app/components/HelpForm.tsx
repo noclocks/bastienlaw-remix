@@ -15,7 +15,9 @@ import 'react-toastify/dist/ReactToastify.min.css';
 //   return json(data);
 // };
 
-const notify = ({type = 'success' || 'error'}) =>
+const notify = ({type}: {
+  type: 'success' | 'error';
+}) =>
   toast(
     type === 'success'
       ? 'Thank you for contacting us!'
