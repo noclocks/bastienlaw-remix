@@ -7,6 +7,7 @@ import {
   MetaFunction,
   Outlet,
   Scripts,
+  LiveReload,
   ScrollRestoration,
   useLoaderData,
   useLocation
@@ -28,6 +29,24 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Law Offices of Villard Bastien" },
   ];
 };
+
+function GoogleAnalytics() {
+  return (
+    <>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQBBSBFGZG"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BQBBSBFGZG');
+          `,
+        }}
+      />
+    </>
+  );
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
@@ -103,5 +122,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <html lang="en">
+      <head>
+        <Meta />
+        <Links />
+        <GoogleAnalytics /> {/* Include Google Analytics here */}
+      </head>
+      <body>
+        <Outlet />
+        <Scripts />
+        <LiveReload />
+      </body>
+    </html>
+  );
 }
