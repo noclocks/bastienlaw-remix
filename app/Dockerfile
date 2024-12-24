@@ -8,7 +8,7 @@ ARG CACHEBUST=1
 
 ################################################################################
 # Use node image for base image for all stages.
-FROM node:${NODE_VERSION}-alpine as base
+FROM node:${NODE_VERSION}-alpine AS base
 
 # Associate with GitHub repository
 LABEL org.opencontainers.image.source=https://github.com/noclocks/bastienlaw-remix
@@ -25,7 +25,7 @@ RUN --mount=type=cache,target=/root/.npm \
 
 ################################################################################
 # Create a stage for installing production dependecies.
-FROM base as deps
+FROM base AS deps
 
 # Cache bust
 ARG CACHEBUST=1
@@ -41,7 +41,7 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 
 ################################################################################
 # Create a stage for building the application.
-FROM deps as build
+FROM deps AS build
 
 # Cache bust
 ARG CACHEBUST=1
@@ -61,7 +61,7 @@ RUN pnpm run build
 ################################################################################
 # Create a new stage to run the application with minimal runtime dependencies
 # where the necessary files are copied from the build stage.
-FROM base as final
+FROM base AS final
 
 # Use production node environment by default.
 ENV NODE_ENV=production
