@@ -1,7 +1,6 @@
-import { json } from "@remix-run/node";
+import React from "react";
 
 import {
-  Link,
   Links,
   Meta,
   MetaFunction,
@@ -9,8 +8,7 @@ import {
   Scripts,
   LiveReload,
   ScrollRestoration,
-  useLoaderData,
-  useLocation
+  useLocation,
 } from "@remix-run/react";
 
 import { useEffect } from "react";
@@ -21,7 +19,7 @@ import "./styles/typography.css";
 import './styles/global.css';
 
 import ScrollToTopButton from "./components/ScrollToTopButton";
-import ChatbotScript from "./components/ChatBot";
+// import ChatbotScript from "./components/ChatBot";
 
 export const meta: MetaFunction = () => {
   return [
@@ -136,4 +134,8 @@ export default function App() {
       </body>
     </html>
   );
+}
+
+export function HydrateFallback() {
+  return <p>Loading...</p>;
 }
