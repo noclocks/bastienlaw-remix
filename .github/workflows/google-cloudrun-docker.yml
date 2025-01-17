@@ -30,6 +30,7 @@
 name: 'Build and Deploy to Cloud Run'
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
