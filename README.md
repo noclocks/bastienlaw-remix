@@ -4,7 +4,7 @@
 > Bastien Law website (clone) built with Remix (+ Vite for SPA mode)
 
 <!-- BADGES:Start -->
-
+[![Build and Deploy to Cloud Run](https://github.com/noclocks/bastienlaw-remix/actions/workflows/google-cloudrun-docker.yml/badge.svg)](https://github.com/noclocks/bastienlaw-remix/actions/workflows/google-cloudrun-docker.yml)
 [![Automate Changelog](https://github.com/noclocks/bastienlaw-remix/actions/workflows/changelog.yml/badge.svg)](https://github.com/noclocks/bastienlaw-remix/actions/workflows/changelog.yml)
 
 <!-- BADGES:End -->
