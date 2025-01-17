@@ -5,8 +5,9 @@
 
 <!-- BADGES:Start -->
 [![Build and Deploy to Cloud Run](https://github.com/noclocks/bastienlaw-remix/actions/workflows/google-cloudrun-docker.yml/badge.svg)](https://github.com/noclocks/bastienlaw-remix/actions/workflows/google-cloudrun-docker.yml)
+[![Docker](https://github.com/noclocks/bastienlaw-remix/actions/workflows/docker.yml/badge.svg)](https://github.com/noclocks/bastienlaw-remix/actions/workflows/docker.yml)
 [![Automate Changelog](https://github.com/noclocks/bastienlaw-remix/actions/workflows/changelog.yml/badge.svg)](https://github.com/noclocks/bastienlaw-remix/actions/workflows/changelog.yml)
-
+[![Dependabot Updates](https://github.com/noclocks/bastienlaw-remix/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/noclocks/bastienlaw-remix/actions/workflows/dependabot/dependabot-updates)
 <!-- BADGES:End -->
 
 ## Tech Stack
