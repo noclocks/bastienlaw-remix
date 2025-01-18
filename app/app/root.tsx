@@ -6,7 +6,6 @@ import {
   MetaFunction,
   Outlet,
   Scripts,
-  LiveReload,
   ScrollRestoration,
   useLocation,
 } from "@remix-run/react";
@@ -130,7 +129,6 @@ export default function App() {
       <body>
         <Outlet />
         <Scripts />
-        <LiveReload />
       </body>
     </html>
   );
