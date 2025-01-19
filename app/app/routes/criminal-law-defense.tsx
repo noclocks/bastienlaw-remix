@@ -43,9 +43,7 @@ export default function CriminalLawDefense() {
                           <ol className='dcsbcm_divi_breadcrumbs'>
                             <li className='dcsbcm_divi_breadcrumb'>
                               <a href='/'>
-                                <span>
-                                  Home
-                                </span>
+                                <span>Home</span>
                               </a>
                               <meta
                                 property='position'
@@ -113,9 +111,7 @@ export default function CriminalLawDefense() {
                         <p>
                           Do not wait. Call me now at{' '}
                           <span className='nap-item nap-item--phone'>
-                            <a href='tel:+1-404-378-4344'>
-                              404-378-4344
-                            </a>
+                            <a href='tel:+1-404-378-4344'>404-378-4344</a>
                           </span>{' '}
                           for a free consultation. I speak English, Spanish and
                           French.
@@ -137,48 +133,42 @@ export default function CriminalLawDefense() {
                               id='menu-practice-areas'
                               className='menu'
                             >
+                              <li className='menu-item current-menu-item menu-item--depth-0'>
+                                <a
+                                  href='serious-injury'
+                                  aria-current='page'
+                                  tabIndex={0}
+                                >
+                                  Medical Malpractice
+                                </a>
+                              </li>
+                              <li className='menu-item menu-item--depth-0'>
+                                <a
+                                  href='criminal-law-defense'
+                                  aria-current='page'
+                                  tabIndex={0}
+                                >
+                                  Criminal Law Defense
+                                </a>
+                              </li>
+                              <li className='menu-item menu-item--depth-0'>
+                                <a
+                                  href='business-general-counsel-business-transactions'
+                                  aria-current='page'
+                                  tabIndex={0}
+                                >
+                                  Business General Counsel / Business
+                                  Transactions
+                                </a>
+                              </li>
                               <li className='menu-item menu-item--depth-0'>
                                 <a
                                   href='nursing-home-abuse'
+                                  aria-current='page'
                                   tabIndex={0}
                                 >
                                   Nursing Home Abuse
                                 </a>
-                              </li>
-                              <li className='menu-item menu-item-has-children current-menu-parent menu-item--depth-0'>
-                                <a
-                                  href='other-practice-areas'
-                                  tabIndex={0}
-                                >
-                                  Other Practice Areas
-                                </a>
-                                <ul className='sub-menu'>
-                                  <li className='menu-item menu-item--depth-1'>
-                                    <a
-                                      href='business-general-counsel-business-transactions'
-                                      tabIndex={0}
-                                    >
-                                      Business General Counsel / Business Transactions
-                                    </a>
-                                  </li>
-                                  <li className='menu-item current-menu-item menu-item--depth-1'>
-                                    <a
-                                      href='criminal-law-defense'
-                                      aria-current='page'
-                                      tabIndex={0}
-                                    >
-                                      Criminal Law Defense
-                                    </a>
-                                  </li>
-                                  <li className='menu-item menu-item--depth-1'>
-                                    <a
-                                      href='serious-injury'
-                                      tabIndex={0}
-                                    >
-                                      Serious Injury
-                                    </a>
-                                  </li>
-                                </ul>
                               </li>
                             </ul>
                           </div>
