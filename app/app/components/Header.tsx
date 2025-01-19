@@ -43,6 +43,28 @@ export const Header = () => {
       : parent.classList.replace('closed', 'opened');
   };
 
+  const MenuItem = (props: {
+    href: string;
+    title: string;
+  }) => {
+    return (
+      <li
+        className='menu-item menu-item--depth-1'
+        onFocus={() => {}}
+        onMouseOver={handleMouseOver}
+        onBlur={() => {}}
+        onMouseOut={handleMouseOut}
+      >
+        <a
+          href={props.href}
+          tabIndex={0}
+        >
+          {props.title}
+        </a>
+      </li>
+    );
+  }
+
   return (
     <header className='et-l et-l--header'>
       <div className='et_builder_inner_content et_pb_gutters1'>
@@ -124,81 +146,35 @@ export const Header = () => {
                             </ul>
                           </li>
                           <li
-                            className='menu-item menu-item-has-children menu-item--depth-2 et-reverse-direction-nav'
+                            className='menu-item menu-item-has-children menu-item--depth-1 et-reverse-direction-nav'
                             onFocus={() => {}}
                             onMouseOver={handleMouseOver}
                             onBlur={() => {}}
                             onMouseOut={handleMouseOut}
                           >
                             <a
-                              href='#?'
+                              href='other-practice-areas'
                               tabIndex={0}
-                              style={{
-                                cursor: 'default',
-                                // pointerEvents: "unset",
-                              }}
                             >
                               Practice Areas
                             </a>
                             <ul className='sub-menu'>
-                              <li
-                                className='menu-item menu-item--depth-1'
-                                onFocus={() => {}}
-                                onMouseOver={handleMouseOver}
-                                onBlur={() => {}}
-                                onMouseOut={handleMouseOut}
-                              >
-                                <a
-                                  href='/nursing-home-abuse'
-                                  tabIndex={0}
-                                >
-                                  Nursing Home Abuse
-                                </a>
-                              </li>
-                              <li
-                                className='menu-item menu-item-has-children menu-item--depth-1'
-                                onFocus={() => {}}
-                                onMouseOver={handleMouseOver}
-                                onBlur={() => {}}
-                                onMouseOut={handleMouseOut}
-                              >
-                                <a
-                                  href='/other-practice-areas'
-                                  tabIndex={0}
-                                >
-                                  Other Practice Areas
-                                </a>
-                                <ul
-                                  className='sub-menu'
-                                  style={{left: 'auto'}}
-                                >
-                                  <li className='menu-item menu-item--depth-2'>
-                                    <a
-                                      href='/business-general-counsel-business-transactions'
-                                      tabIndex={0}
-                                    >
-                                      Business General Counsel/ Business
-                                      Transactions
-                                    </a>
-                                  </li>
-                                  <li className='menu-item menu-item--depth-2'>
-                                    <a
-                                      href='/criminal-law-defense'
-                                      tabIndex={0}
-                                    >
-                                      Criminal Law Defense
-                                    </a>
-                                  </li>
-                                  <li className='menu-item menu-item--depth-2'>
-                                    <a
-                                      href='/serious-injury'
-                                      tabIndex={0}
-                                    >
-                                      Serious Injury
-                                    </a>
-                                  </li>
-                                </ul>
-                              </li>
+                              <MenuItem
+                                href='serious-injury'
+                                title='Medical Malpractice'
+                              />
+                              <MenuItem
+                                href='criminal-law-defense'
+                                title='Crimal Law Defense'
+                              />
+                              <MenuItem
+                                href='business-general-counsel-business-transactions'
+                                title='Business General Counsel / Business Transactions'
+                              />
+                              <MenuItem
+                                href='nursing-home-abuse'
+                                title='Nursing Home Abuse'
+                              />
                             </ul>
                           </li>
                           <li className='menu-item menu-item--depth-0'>
@@ -254,11 +230,13 @@ export const Header = () => {
                           style={{
                             color: 'rgba(0, 0, 0, 0.6)',
                             letterSpacing: '0px',
-                            fontFamily: "'Open Sans', Helvetica, Arial, Lucida, sans-serif",
+                            fontFamily:
+                              "'Open Sans', Helvetica, Arial, Lucida, sans-serif",
                             fontWeight: 500,
                             textTransform: 'none',
                             fontSize: '14px',
-                          }}/>
+                          }}
+                        />
                         <ul
                           id='mobile_menu2'
                           className='et_mobile_menu'
@@ -305,18 +283,53 @@ export const Header = () => {
                           </li>
                           <li className='menu-item menu-item-has-children menu-item--depth-0'>
                             <a
-                              href='#?'
+                              href='other-practice-areas'
                               tabIndex={0}
-                              className='da11y-submenu fl-menu-toggle-only toggle-menu'
-                              aria-expanded='false'
-                              // role='link'
-                              data-et-icon='C'
-                              aria-label='Submenu'
-                              onClick={handleMobileToggle}
+                              className="da11y-submenu"
                             >
                               Practice Areas
                             </a>
+                            <a
+                              href='#?'
+                              className='toggle-menu fl-toggle-icon'
+                              aria-expanded='false'
+                              aria-label='Practice Areas Submenu'
+                              onClick={handleMobileToggle}
+                            >
+                              C
+                            </a>
                             <ul className='sub-menu'>
+                              <li className='menu-item menu-item--depth-1'>
+                                <a
+                                  href='serious-injury'
+                                  tabIndex={0}
+                                  aria-haspopup='true'
+                                  // role='link'
+                                >
+                                  Medical Malpractice
+                                </a>
+                              </li>
+                              <li className='menu-item menu-item--depth-1'>
+                                <a
+                                  href='criminal-law-defense'
+                                  tabIndex={0}
+                                  aria-haspopup='true'
+                                  // role='link'
+                                >
+                                  Criminal Law Defense
+                                </a>
+                              </li>
+                              <li className='menu-item menu-item--depth-1'>
+                                <a
+                                  href='business-general-counsel-business-transactions'
+                                  tabIndex={0}
+                                  aria-haspopup='true'
+                                  // role='link'
+                                >
+                                  Business General Counsel / Business
+                                  Transactions
+                                </a>
+                              </li>
                               <li className='menu-item menu-item--depth-1'>
                                 <a
                                   href='nursing-home-abuse'
@@ -326,60 +339,6 @@ export const Header = () => {
                                 >
                                   Nursing Home Abuse
                                 </a>
-                              </li>
-                              <li className='menu-item menu-item-has-children menu-item--depth-1'>
-                                <a
-                                  href='other-practice-areas'
-                                  tabIndex={0}
-                                  className='da11y-submenu'
-                                  aria-expanded='false'
-                                  aria-haspopup='true'
-                                  // role='link'
-                                >
-                                  Other Practice Areas
-                                </a>
-                                <a
-                                  href='#?'
-                                  className='toggle-menu fl-toggle-icon'
-                                  aria-expanded='false'
-                                  aria-label='Other Practice Areas Submenu'
-                                  onClick={handleMobileToggle}
-                                >
-                                  C
-                                </a>
-                                <ul className='sub-menu'>
-                                  <li className='menu-item menu-item--depth-2'>
-                                    <a
-                                      href='business-general-counsel-business-transactions'
-                                      tabIndex={0}
-                                      aria-haspopup='true'
-                                      // role='link'
-                                    >
-                                      Business General Counsel / Business
-                                      Transactions
-                                    </a>
-                                  </li>
-                                  <li className='menu-item menu-item--depth-2'>
-                                    <a
-                                      href='criminal-law-defense'
-                                      tabIndex={0}
-                                      aria-haspopup='true'
-                                      // role='link'
-                                    >
-                                      Criminal Law Defense
-                                    </a>
-                                  </li>
-                                  <li className='menu-item menu-item--depth-2'>
-                                    <a
-                                      href='serious-injury'
-                                      tabIndex={0}
-                                      aria-haspopup='true'
-                                      // role='link'
-                                    >
-                                      Serious Injury
-                                    </a>
-                                  </li>
-                                </ul>
                               </li>
                             </ul>
                           </li>
