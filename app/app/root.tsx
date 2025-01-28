@@ -16,6 +16,9 @@ import * as gtag from "./utils/gtags.client";
 
 import "./styles/typography.css";
 import './styles/global.css';
+import "./styles/home.css"
+import "./styles/dsethtml.css";
+import "./styles/dsethtml2.css";
 
 import ScrollToTopButton from "./components/ScrollToTopButton";
 // import ChatbotScript from "./components/ChatBot";

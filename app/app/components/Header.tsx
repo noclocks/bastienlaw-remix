@@ -1,29 +1,36 @@
-import {MouseEvent} from "react";
+import { MouseEvent, useState } from "react";
 import Logo from "../wp-content/uploads/sites/1302270/2021/06/logo.jpg"
 
-import "../styles/home.css"
-import "../styles/dsethtml.css";
-import "../styles/dsethtml2.css";
+export const practiceAreas = [
+  { title: "All Practice Areas", path: "/practice-areas" },
+  { title: "Medical Malpractice", path: "/serious-injury" },
+  { title: "Criminal Law Defense", path: "/criminal-law-defense" },
+  { title: "Business General Counsel", path: "/business-general-counsel-business-transactions" },
+  { title: "Nursing Home Abuse", path: "/nursing-home-abuse" },
+  { title: "Other Practice Areas", path: "/other-practice-areas" },
+];
+
 
 export const Header = () => {
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
 
   const handleMouseOver = (e: MouseEvent) => {
-    const target = e.target as HTMLAnchorElement;
-    const parent = target.parentElement as HTMLLIElement;
-
-    parent.classList.add('et-hover');
-    parent.classList.add('et-show-dropdown');
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+      setTimeoutId(null);
+    }
+    const target = e.currentTarget as HTMLLIElement;
+    target.classList.add('et-hover');
+    target.classList.add('et-show-dropdown');
   };
 
   const handleMouseOut = (e: MouseEvent) => {
-    setTimeout(() => {
-      const target = e.target as HTMLAnchorElement;
-      const parent = target.parentElement as HTMLLIElement;
-
-      // const currentPage = __remixRouter.state.location.pathname;
-      parent.classList.remove('et-hover');
-      parent.classList.remove('et-show-dropdown');
-    }, 1000);
+    const target = e.currentTarget as HTMLLIElement;
+    const newTimeoutId = setTimeout(() => {
+      target.classList.remove('et-hover');
+      target.classList.remove('et-show-dropdown');
+    }, 200);
+    setTimeoutId(newTimeoutId);
   };
 
   const handleMobileToggle = (e: MouseEvent) => {
@@ -48,17 +55,8 @@ export const Header = () => {
     title: string;
   }) => {
     return (
-      <li
-        className='menu-item menu-item--depth-1'
-        onFocus={() => {}}
-        onMouseOver={handleMouseOver}
-        onBlur={() => {}}
-        onMouseOut={handleMouseOut}
-      >
-        <a
-          href={props.href}
-          tabIndex={0}
-        >
+      <li className='menu-item menu-item--depth-1'>
+        <a href={props.href} tabIndex={0}>
           {props.title}
         </a>
       </li>
@@ -146,35 +144,25 @@ export const Header = () => {
                             </ul>
                           </li>
                           <li
-                            className='menu-item menu-item-has-children menu-item--depth-1 et-reverse-direction-nav'
-                            onFocus={() => {}}
-                            onMouseOver={handleMouseOver}
-                            onBlur={() => {}}
-                            onMouseOut={handleMouseOut}
+                            className="menu-item menu-item-has-children menu-item--depth-1 et-reverse-direction-nav"
+                            onMouseEnter={handleMouseOver}
+                            onMouseLeave={handleMouseOut}
                           >
-                            <a
-                              href='other-practice-areas'
-                              tabIndex={0}
-                            >
+                            <a href="/practice-areas" tabIndex={0}>
                               Practice Areas
                             </a>
-                            <ul className='sub-menu'>
-                              <MenuItem
-                                href='serious-injury'
-                                title='Medical Malpractice'
-                              />
-                              <MenuItem
-                                href='criminal-law-defense'
-                                title='Crimal Law Defense'
-                              />
-                              <MenuItem
-                                href='business-general-counsel-business-transactions'
-                                title='Business General Counsel / Business Transactions'
-                              />
-                              <MenuItem
-                                href='nursing-home-abuse'
-                                title='Nursing Home Abuse'
-                              />
+                            <ul
+                              className="sub-menu"
+                              onMouseEnter={handleMouseOver}
+                              onMouseLeave={handleMouseOut}
+                            >
+                              {practiceAreas.map((area, index) => (
+                                <MenuItem
+                                  key={index}
+                                  href={area.path}
+                                  title={area.title}
+                                />
+                              ))}
                             </ul>
                           </li>
                           <li className='menu-item menu-item--depth-0'>
@@ -281,9 +269,12 @@ export const Header = () => {
                               </li>
                             </ul>
                           </li>
+
+
+
                           <li className='menu-item menu-item-has-children menu-item--depth-0'>
                             <a
-                              href='other-practice-areas'
+                              href='practice-areas'
                               tabIndex={0}
                               className="da11y-submenu"
                             >
@@ -299,6 +290,26 @@ export const Header = () => {
                               C
                             </a>
                             <ul className='sub-menu'>
+                              {/* export const practiceAreas = [
+                              {title: "All Practice Areas", path: "/practice-areas" },
+                              {title: "Medical Malpractice", path: "/serious-injury" },
+                              {title: "Criminal Law Defense", path: "/criminal-law-defense" },
+                              {title: "Business General Counsel", path: "/business-general-counsel-business-transactions" },
+                              {title: "Nursing Home Abuse", path: "/nursing-home-abuse" },
+                              {title: "Other Practice Areas", path: "/other-practice-areas" },
+                              ]; */}
+
+                              <li className='menu-item menu-item--depth-1'>
+                                <a
+                                  href='practice-ares'
+                                  tabIndex={0}
+                                  aria-haspopup='true'
+                                // role='link'
+                                >
+                                  All Practice Areas
+                                </a>
+                              </li>
+
                               <li className='menu-item menu-item--depth-1'>
                                 <a
                                   href='serious-injury'
@@ -326,8 +337,7 @@ export const Header = () => {
                                   aria-haspopup='true'
                                   // role='link'
                                 >
-                                  Business General Counsel / Business
-                                  Transactions
+                                  Business General Counsel
                                 </a>
                               </li>
                               <li className='menu-item menu-item--depth-1'>
@@ -338,6 +348,16 @@ export const Header = () => {
                                   // role='link'
                                 >
                                   Nursing Home Abuse
+                                </a>
+                              </li>
+                              <li className='menu-item menu-item--depth-1'>
+                                <a
+                                  href='other-practice-areas'
+                                  tabIndex={0}
+                                  aria-haspopup='true'
+                                // role='link'
+                                >
+                                  Other Practice Areas
                                 </a>
                               </li>
                             </ul>
