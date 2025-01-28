@@ -308,20 +308,44 @@ export default function Index() {
                         <div className="et_pb_row et_pb_row_4 fl-practice-area-blurb fl-ada-tab-fix et_pb_equal_columns et_pb_gutters2">
                           <div className="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
                             <div className="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_0 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
-                              <a href="/nursing-home-abuse">
+                              <a href="/practice-areas">
                                 <div className="et_pb_module_inner">
-                                  <div
-                                    className="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light"
-                                    data-blurb-position="top"
-                                  >
+                                  <div className="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
                                     <div className="et_pb_blurb_content">
                                       <div className="et_pb_blurb_container">
                                         <span className="card-icon">
                                           <img
                                             src={Icon1}
-                                            alt="Nursing Home Abuse"
+                                            alt="All Practice Areas"
                                             className="et-waypoint et_pb_animation_top"
                                             width={79}
+                                            height={80}
+                                            loading="lazy"
+                                          />
+                                        </span>
+                                        <div className="et_pb_blurb_description">
+                                          <p>All Practice Areas</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div className="et_pb_column et_pb_column_1_3 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
+                            <div className="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_1 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
+                              <a href="/nursing-home-abuse">
+                                <div className="et_pb_module_inner">
+                                  <div className="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
+                                    <div className="et_pb_blurb_content">
+                                      <div className="et_pb_blurb_container">
+                                        <span className="card-icon">
+                                          <img
+                                            src={Icon2}
+                                            alt="Nursing Home Abuse"
+                                            className="et-waypoint et_pb_animation_top"
+                                            width={91}
                                             height={80}
                                             loading="lazy"
                                           />
@@ -336,52 +360,17 @@ export default function Index() {
                               </a>
                             </div>
                           </div>
-                          <div className="et_pb_column et_pb_column_1_3 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
-                            <a href="other-practice-areas">
-                              <div className="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_1 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
-                                <div className="et_pb_module_inner">
-                                  <div
-                                    className="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light"
-                                    data-blurb-position="top"
-                                  >
-                                    <div className="et_pb_blurb_content">
-                                      <div className="et_pb_blurb_container">
-                                        <span className="card-icon">
-                                          <img
-                                            decoding="async"
-                                            // src="../wp-content/uploads/sites/1302270/2021/06/icon2.png"
-                                            src={Icon2}
-                                            alt="Other Areas Of Practice"
-                                            className="et-waypoint et_pb_animation_top"
-                                            width={91}
-                                            height={80}
-                                          />
-                                        </span>
-                                        <div className="et_pb_blurb_description">
-                                          <p>Other Areas Of Practice</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
                           <div className="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                            <a href="about">
-                              <div className="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_2 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
+                            <div className="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_2 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
+                              <a href="/other-practice-areas">
                                 <div className="et_pb_module_inner">
-                                  <div
-                                    className="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light"
-                                    data-blurb-position="top"
-                                  >
+                                  <div className="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
                                     <div className="et_pb_blurb_content">
                                       <div className="et_pb_blurb_container">
                                         <span className="card-icon">
                                           <img
-                                            decoding="async"
                                             src={Icon3}
-                                            alt="About My Firm"
+                                            alt="Other Practice Areas"
                                             className="et-waypoint et_pb_animation_top"
                                             width={86}
                                             height={80}
@@ -389,20 +378,16 @@ export default function Index() {
                                           />
                                         </span>
                                         <div className="et_pb_blurb_description">
-                                          <p>About My Firm</p>
+                                          <p>Other Practice Areas</p>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                            </a>
+                              </a>
+                            </div>
                           </div>
-                          <a href="about">
-                          </a>
                         </div>
-                        <a href="about">
-                        </a>
                       </div>
                       <div className="et_pb_section et_pb_section_4 content-3 fl-home-sec-5 et_pb_with_background et_section_regular">
                         <div className="et_pb_row et_pb_row_5 fl-ada-tab-fix et_pb_equal_columns">
