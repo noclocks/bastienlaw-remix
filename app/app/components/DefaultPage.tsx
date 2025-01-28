@@ -104,46 +104,39 @@ export default function DefaultPage(props: DefaultPageProps) {
                               >
                                 <li className='menu-item current-menu-item menu-item--depth-0'>
                                   <a
+                                    href='serious-injury'
+                                    aria-current='page'
+                                    tabIndex={0}
+                                  >
+                                    Medical Malpractice
+                                  </a>
+                                </li>
+                                <li className='menu-item menu-item--depth-0'>
+                                  <a
+                                    href='criminal-law-defense'
+                                    aria-current='page'
+                                    tabIndex={0}
+                                  >
+                                    Criminal Law Defense
+                                  </a>
+                                </li>
+                                <li className='menu-item menu-item--depth-0'>
+                                  <a
+                                    href='business-general-counsel-business-transactions'
+                                    aria-current='page'
+                                    tabIndex={0}
+                                  >
+                                    Business General Counsel / Business Transactions
+                                  </a>
+                                </li>
+                                <li className='menu-item menu-item--depth-0'>
+                                  <a
                                     href='nursing-home-abuse'
                                     aria-current='page'
                                     tabIndex={0}
                                   >
                                     Nursing Home Abuse
                                   </a>
-                                </li>
-                                <li className='menu-item menu-item-has-children menu-item--depth-0'>
-                                  <a
-                                    href='other-practice-areas'
-                                    tabIndex={0}
-                                  >
-                                    Other Practice Areas
-                                  </a>
-                                  <ul className='sub-menu'>
-                                    <li className='menu-item menu-item--depth-1'>
-                                      <a
-                                        href='business-general-counsel-business-transactions'
-                                        tabIndex={0}
-                                      >
-                                        Business General Counsel / Business Transactions
-                                      </a>
-                                    </li>
-                                    <li className='menu-item menu-item--depth-1'>
-                                      <a
-                                        href='criminal-law-defense'
-                                        tabIndex={0}
-                                      >
-                                        Criminal Law Defense
-                                      </a>
-                                    </li>
-                                    <li className='menu-item menu-item--depth-1'>
-                                      <a
-                                        href='serious-injury'
-                                        tabIndex={0}
-                                      >
-                                        Serious Injury
-                                      </a>
-                                    </li>
-                                  </ul>
                                 </li>
                               </ul>
                             </div>
