@@ -269,9 +269,12 @@ export const Header = () => {
                               </li>
                             </ul>
                           </li>
+
+
+
                           <li className='menu-item menu-item-has-children menu-item--depth-0'>
                             <a
-                              href='other-practice-areas'
+                              href='practice-areas'
                               tabIndex={0}
                               className="da11y-submenu"
                             >
@@ -287,6 +290,26 @@ export const Header = () => {
                               C
                             </a>
                             <ul className='sub-menu'>
+                              {/* export const practiceAreas = [
+                              {title: "All Practice Areas", path: "/practice-areas" },
+                              {title: "Medical Malpractice", path: "/serious-injury" },
+                              {title: "Criminal Law Defense", path: "/criminal-law-defense" },
+                              {title: "Business General Counsel", path: "/business-general-counsel-business-transactions" },
+                              {title: "Nursing Home Abuse", path: "/nursing-home-abuse" },
+                              {title: "Other Practice Areas", path: "/other-practice-areas" },
+                              ]; */}
+
+                              <li className='menu-item menu-item--depth-1'>
+                                <a
+                                  href='practice-ares'
+                                  tabIndex={0}
+                                  aria-haspopup='true'
+                                // role='link'
+                                >
+                                  All Practice Areas
+                                </a>
+                              </li>
+
                               <li className='menu-item menu-item--depth-1'>
                                 <a
                                   href='serious-injury'
@@ -314,8 +337,7 @@ export const Header = () => {
                                   aria-haspopup='true'
                                   // role='link'
                                 >
-                                  Business General Counsel / Business
-                                  Transactions
+                                  Business General Counsel
                                 </a>
                               </li>
                               <li className='menu-item menu-item--depth-1'>
@@ -326,6 +348,16 @@ export const Header = () => {
                                   // role='link'
                                 >
                                   Nursing Home Abuse
+                                </a>
+                              </li>
+                              <li className='menu-item menu-item--depth-1'>
+                                <a
+                                  href='other-practice-areas'
+                                  tabIndex={0}
+                                  aria-haspopup='true'
+                                // role='link'
+                                >
+                                  Other Practice Areas
                                 </a>
                               </li>
                             </ul>
